@@ -64,11 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				vertex: {
-					purple: 'hsl(262 83% 58%)',
-					blue: 'hsl(217 91% 60%)',
-					dark: 'hsl(222 47% 11%)',
-					light: 'hsl(220 14% 96%)',
-					muted: 'hsl(215 16% 47%)'
+					purple: 'hsl(250 95% 63%)',
+					pink: 'hsl(340 82% 52%)',
+					dark: 'hsl(220 13% 13%)',
+					light: 'hsl(215 25% 95%)',
+					muted: 'hsl(215 16% 46%)'
 				}
 			},
 			borderRadius: {
@@ -77,7 +77,9 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				'space': ['Space Grotesk', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'outfit': ['Outfit', 'sans-serif'],
+				'sans': ['Inter', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {
