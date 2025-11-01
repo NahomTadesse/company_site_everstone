@@ -1,5 +1,5 @@
 
-import { ArrowLeft, CheckCircle, ArrowRight } from 'lucide-react';
+import { ArrowLeft, CheckCircle, ArrowRight, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
@@ -139,39 +139,35 @@ const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
                     {
-                      name: "Alex Thompson",
+                      name: "Team Member 1",
                       role: "CEO and Founder",
                       bio: "Leading Vertex with a vision to democratize access to world-class digital development.",
-                      image: "/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png"
+                      bgColor: "bg-primary/10"
                     },
                     {
-                      name: "Sarah Chen",
+                      name: "Team Member 2",
                       role: "Head of Engineering",
                       bio: "Expert in scalable architecture, cloud infrastructure, and high-performance systems.",
-                      image: "/lovable-uploads/e502f601-c519-43a8-86f5-5fa89ae50d2f.png"
+                      bgColor: "bg-accent/10"
                     },
                     {
-                      name: "Marcus Rodriguez",
+                      name: "Team Member 3",
                       role: "Head of Product",
                       bio: "Specialist in user experience, product strategy, and turning insights into features.",
-                      image: "/lovable-uploads/3de85ddd-15e1-4216-9697-f91abb9a47ce.png"
+                      bgColor: "bg-primary/20"
                     },
                     {
-                      name: "Emily Foster",
+                      name: "Team Member 4",
                       role: "COO",
                       bio: "Ensuring seamless project delivery, client satisfaction, and operational excellence.",
-                      image: "/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
+                      bgColor: "bg-accent/20"
                     }
                   ].map((member, i) => (
                     <Card key={i} className="bg-gradient-to-br from-secondary to-white border border-primary/10 overflow-hidden">
                       <CardContent className="p-6">
                         <div className="flex flex-col items-center text-center">
-                          <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden">
-                            <img 
-                              src={member.image} 
-                              alt={member.name} 
-                              className="w-full h-full object-cover filter grayscale" 
-                            />
+                          <div className={`w-32 h-32 relative mb-4 rounded-full flex items-center justify-center ${member.bgColor}`}>
+                            <User className="w-16 h-16 text-primary" strokeWidth={1.5} />
                           </div>
                           <h3 className="font-bold text-lg">{member.name}</h3>
                           <p className="text-muted-foreground text-sm mb-2">{member.role}</p>
