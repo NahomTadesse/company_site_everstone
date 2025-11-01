@@ -42,6 +42,20 @@ const Features = () => {
       description: "Machine learning models, chatbots, intelligent automation, and AI-powered features to enhance your applications.",
       image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png",
       category: "AI"
+    },
+    {
+      icon: <Database className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Data Analytics",
+      description: "Business intelligence dashboards, data visualization, predictive analytics, and insights-driven reporting systems.",
+      image: "/lovable-uploads/cbd073dd-ecad-4643-bf2b-efc3d5846994.png",
+      category: "Analytics"
+    },
+    {
+      icon: <Cpu className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Digital Consulting",
+      description: "Strategic technology consulting, digital transformation roadmaps, and architecture design for enterprise solutions.",
+      image: "/lovable-uploads/6fdd3d0d-5dca-470a-a845-bd7b07bff599.png",
+      category: "Consulting"
     }
   ];
 
@@ -64,18 +78,18 @@ const Features = () => {
   const pillars = [
     {
       icon: <Code className="w-6 h-6 text-primary" />,
-      title: "Web Development",
+      title: "Web & Mobile",
       description: "Modern responsive websites and progressive web apps using React, TypeScript, and cutting-edge frameworks for optimal performance."
     },
     {
-      icon: <Smartphone className="w-6 h-6 text-primary" />,
-      title: "Mobile Apps",
-      description: "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences."
+      icon: <Database className="w-6 h-6 text-primary" />,
+      title: "Data & Analytics",
+      description: "Transform raw data into actionable insights with business intelligence, visualization, and predictive analytics solutions."
     },
     {
       icon: <Layers className="w-6 h-6 text-primary" />,
-      title: "Cloud & AI",
-      description: "Scalable cloud infrastructure, RESTful APIs, and AI-powered features that grow with your business needs."
+      title: "Consulting & Strategy",
+      description: "Strategic technology consulting, digital transformation roadmaps, and expert guidance to accelerate your digital journey."
     }
   ];
 
@@ -128,11 +142,11 @@ const Features = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
-            {features.map((feature, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-16">
+              {features.map((feature, index) => (
               <div 
                 key={index} 
-                className="feature-item rounded-xl overflow-hidden transform transition-all duration-300 relative shadow-lg hover:-translate-y-1 h-[280px]"
+                className="feature-item rounded-xl overflow-hidden transform transition-all duration-300 relative shadow-lg hover:-translate-y-1 h-[320px]"
                 onMouseEnter={() => setHoveredFeature(index)} 
                 onMouseLeave={() => setHoveredFeature(null)}
               >

@@ -34,6 +34,138 @@ export interface ContentSection {
 export const blogPosts: BlogPost[] = [
   {
     id: '1',
+    title: 'Data-Driven Decision Making: Implementing Business Analytics',
+    slug: 'data-driven-decision-making-business-analytics',
+    excerpt: 'Transform raw data into actionable insights with modern analytics tools, dashboards, and intelligence strategies.',
+    date: 'February 5, 2025',
+    author: 'Vertex Digital',
+    category: 'Data Analytics',
+    imageUrl: '/lovable-uploads/cbd073dd-ecad-4643-bf2b-efc3d5846994.png',
+    keywords: [
+      'data analytics',
+      'business intelligence',
+      'data visualization',
+      'KPI tracking',
+      'analytics dashboards',
+      'predictive analytics',
+      'big data'
+    ],
+    metaDescription: 'Comprehensive guide to implementing data analytics and business intelligence for competitive advantage.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'In today\'s data-rich environment, companies that effectively harness analytics gain significant competitive advantages. Yet many organizations struggle to transform raw data into meaningful insights that drive action.'
+      },
+      {
+        type: 'heading',
+        content: 'The Analytics Maturity Journey'
+      },
+      {
+        type: 'paragraph',
+        content: 'Most companies progress through distinct analytics phases: descriptive (what happened), diagnostic (why it happened), predictive (what will happen), and prescriptive (what should we do). Understanding your current stage helps prioritize investments.'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '73%',
+            label: 'Executives say data-driven decisions are crucial',
+            icon: 'TrendingUp'
+          },
+          {
+            value: '5x',
+            label: 'ROI improvement with proper analytics',
+            icon: 'DollarSign'
+          },
+          {
+            value: '40%',
+            label: 'Time saved with automated reporting',
+            icon: 'Clock'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Building Effective Dashboards'
+      },
+      {
+        type: 'icon-list',
+        items: [
+          'Design KPI dashboards that highlight critical metrics at a glance with visual hierarchies',
+          'Implement real-time data pipelines for up-to-the-minute insights and alerts',
+          'Create role-specific views so each team sees relevant data in their context',
+          'Use predictive models to forecast trends and identify opportunities early',
+          'Integrate multiple data sources into unified analytics platforms'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'The goal isn\'t just to collect data—it\'s to create intelligence that drives better, faster decisions across your organization.'
+      }
+    ]
+  },
+  {
+    id: '2',
+    title: 'Digital Transformation: A Strategic Roadmap for Success',
+    slug: 'digital-transformation-strategic-roadmap',
+    excerpt: 'Navigate your digital transformation journey with proven frameworks, best practices, and expert guidance.',
+    date: 'January 28, 2025',
+    author: 'Vertex Digital',
+    category: 'Digital Consulting',
+    imageUrl: '/lovable-uploads/6fdd3d0d-5dca-470a-a845-bd7b07bff599.png',
+    keywords: [
+      'digital transformation',
+      'technology consulting',
+      'enterprise architecture',
+      'change management',
+      'digital strategy',
+      'modernization'
+    ],
+    metaDescription: 'Expert guide to digital transformation strategy, planning, and execution for enterprise success.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Digital transformation is no longer optional—it\'s essential for survival. Yet 70% of transformation initiatives fail due to poor planning, resistance to change, or lack of strategic vision. Success requires more than new technology.'
+      },
+      {
+        type: 'heading',
+        content: 'The Transformation Framework'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Phase', 'Focus', 'Timeline'],
+          rows: [
+            ['Assessment', 'Current state analysis & gap identification', '2-4 weeks'],
+            ['Strategy', 'Vision, roadmap & business case', '4-6 weeks'],
+            ['Architecture', 'Technical design & platform selection', '6-8 weeks'],
+            ['Implementation', 'Phased rollout & change management', '3-12 months'],
+            ['Optimization', 'Continuous improvement & scaling', 'Ongoing']
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Critical Success Factors'
+      },
+      {
+        type: 'icon-list',
+        items: [
+          'Executive sponsorship with clear accountability and resource commitment',
+          'Customer-centric approach focusing on business value, not just technology',
+          'Agile methodology enabling iterative progress with regular feedback loops',
+          'Strong change management addressing culture, processes, and skills',
+          'Data-driven decision making with metrics tracking progress and ROI'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Successful transformation isn\'t about technology—it\'s about reimagining how your business creates and delivers value in a digital world.'
+      }
+    ]
+  },
+  {
+    id: '3',
     title: 'Building Scalable Web Applications: Best Practices for 2025',
     slug: 'scalable-web-applications-best-practices',
     excerpt: 'Learn the essential patterns and technologies for building web applications that scale from MVP to millions of users.',
@@ -133,7 +265,7 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
-    id: '2',
+    id: '4',
     title: 'AI Integration in Modern Applications: Practical Guide',
     slug: 'ai-integration-modern-applications',
     excerpt: 'Discover how to integrate AI and machine learning into your applications without the complexity or massive infrastructure costs.',
@@ -197,7 +329,7 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
-    id: '3',
+    id: '5',
     title: 'Mobile-First Development: Strategies for Success',
     slug: 'mobile-first-development-strategies',
     excerpt: 'Why mobile-first thinking creates better experiences across all devices and how to implement it effectively.',

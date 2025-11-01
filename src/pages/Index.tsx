@@ -21,10 +21,10 @@ const Index = () => {
   return (
     <PageLayout>
       <SEO 
-        title="Vertex Digital - Modern Web & Mobile Development" 
-        description="Vertex Digital: Expert web and mobile development that brings your vision to life. React, Node.js, cloud infrastructure, and AI integration."
+        title="Vertex Digital - Full-Stack Development, Analytics & Consulting" 
+        description="Vertex Digital: Expert web & mobile development, data analytics, AI integration, and strategic consulting. Transform your business digitally with modern technology solutions."
         imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
-        keywords={['web development', 'mobile app development', 'React development', 'full-stack development', 'cloud solutions', 'AI integration', 'custom software']}
+        keywords={['web development', 'mobile app development', 'data analytics', 'business intelligence', 'digital consulting', 'AI integration', 'cloud solutions', 'digital transformation']}
       />
       <Hero />
       <Features />

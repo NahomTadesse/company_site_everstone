@@ -57,7 +57,7 @@ const Hero = () => {
                 Transforming Ideas Into Digital Solutions
               </motion.h1>
               <motion.p variants={itemVariants} className="text-lg sm:text-xl text-gray-300 mt-4 sm:mt-6 md:text-base text-left">
-                Expert web and mobile development that brings your vision to life with modern technology and seamless user experiences.
+                Full-stack development, data analytics, AI integration, and strategic consulting to transform your business digitally.
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8" variants={itemVariants}>
                 <button className="min-h-[44px] px-6 sm:px-8 py-3 bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-all shadow-lg hover:shadow-xl flex items-center justify-center group text-sm sm:text-base font-medium" onClick={e => {
@@ -91,24 +91,24 @@ const Hero = () => {
             <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 flex items-center justify-center rounded-lg mb-2 md:mb-3">
               <Code className="w-5 h-5 md:w-6 md:h-6 text-primary" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-foreground">Web Development</h3>
-            <p className="text-muted-foreground text-xs md:text-sm">Modern responsive websites and web applications built with cutting-edge frameworks.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-foreground">Development</h3>
+            <p className="text-muted-foreground text-xs md:text-sm">Web, mobile, and cloud applications built with modern frameworks.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-accent/10 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-accent/10 flex items-center justify-center rounded-lg mb-2 md:mb-3">
               <Cpu className="w-5 h-5 md:w-6 md:h-6 text-accent" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-foreground">Mobile Apps</h3>
-            <p className="text-muted-foreground text-xs md:text-sm">Native and cross-platform mobile applications for iOS and Android.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-foreground">Data & AI</h3>
+            <p className="text-muted-foreground text-xs md:text-sm">Analytics dashboards, machine learning, and intelligent automation.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-primary/10 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 flex items-center justify-center rounded-lg mb-2 md:mb-3">
               <Layers className="w-5 h-5 md:w-6 md:h-6 text-primary" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-foreground">Cloud & AI</h3>
-            <p className="text-muted-foreground text-xs md:text-sm">Scalable cloud infrastructure, APIs, and AI-powered features.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-foreground">Consulting</h3>
+            <p className="text-muted-foreground text-xs md:text-sm">Strategic guidance and digital transformation expertise.</p>
           </motion.div>
         </motion.div>
       </div>

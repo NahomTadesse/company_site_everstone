@@ -8,7 +8,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const projects = [
   {
     id: 1,
-    title: "AI-Powered E-commerce Platform",
+    title: "E-Commerce Platform with AI",
     brand: "RetailNext",
     description: "Full-stack e-commerce solution with intelligent product recommendations, real-time inventory management, and seamless payment integration processing $2M+ monthly.",
     tags: ["E-commerce", "AI", "React", "Node.js"],
@@ -19,15 +19,24 @@ const projects = [
   },
   {
     id: 2,
-    title: "Enterprise SaaS Dashboard",
+    title: "Business Intelligence Suite",
     brand: "DataFlow Analytics",
-    description: "Modern analytics platform with real-time data visualization, custom reporting, and collaborative workspace features serving 10K+ enterprise users.",
-    tags: ["SaaS", "Analytics", "TypeScript", "Cloud"],
+    description: "Enterprise analytics platform with interactive dashboards, predictive modeling, custom KPI tracking, and real-time data pipelines serving Fortune 500 clients.",
+    tags: ["Analytics", "BI", "Python", "PostgreSQL"],
     imageUrl: "/lovable-uploads/b0622048-17b4-4c75-a3f0-6c9e17de1d09.png",
     link: "/projects/sport-retail"
   },
   {
     id: 3,
+    title: "Digital Transformation Project",
+    brand: "Enterprise Corp",
+    description: "Full-scale consulting engagement: modernized legacy systems, cloud migration strategy, microservices architecture, and agile transformation for 500+ person organization.",
+    tags: ["Consulting", "Cloud", "Strategy", "DevOps"],
+    imageUrl: "/lovable-uploads/c30e0487-2fa0-41d1-9a0b-699cb2855388.png",
+    link: "/projects/hockey"
+  },
+  {
+    id: 4,
     title: "Mobile Fitness Application",
     brand: "FitTech Pro",
     description: "Cross-platform fitness app with AI workout plans, progress tracking, social features, and wearable device integration used by 50K+ active users.",
@@ -36,20 +45,11 @@ const projects = [
     link: "/projects/workwear"
   },
   {
-    id: 4,
-    title: "Real-time Collaboration Tool",
-    brand: "TeamSync",
-    description: "Cloud-based collaboration platform with video conferencing, document sharing, project management, and WebSocket-powered real-time updates.",
-    tags: ["Collaboration", "WebRTC", "Cloud", "Real-time"],
-    imageUrl: "/lovable-uploads/c30e0487-2fa0-41d1-9a0b-699cb2855388.png",
-    link: "/projects/hockey"
-  },
-  {
     id: 5,
-    title: "AI Content Management System",
-    brand: "ContentHub",
-    description: "Intelligent CMS with AI-powered content generation, SEO optimization, multi-channel publishing, and advanced analytics for content creators.",
-    tags: ["CMS", "AI", "Content", "SEO"],
+    title: "Real-time Analytics Dashboard",
+    brand: "MetricsIQ",
+    description: "Live data visualization platform with predictive analytics, automated alerts, custom reporting, and multi-source data integration for data-driven decision making.",
+    tags: ["Analytics", "Real-time", "D3.js", "WebSocket"],
     imageUrl: "/lovable-uploads/d5ce901e-2ce0-4f2a-bce1-f0ca5d6192df.png",
     link: "/projects/pet-tracker"
   }
