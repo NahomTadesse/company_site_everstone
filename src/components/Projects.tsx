@@ -8,50 +8,48 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const projects = [
   {
     id: 1,
-    title: "6th SENSE Safety System",
-    brand: "FireCat Group",
-    description: "AI-driven sensor solution integrated into uniforms for law enforcement, military and firefighters, providing real-time vital monitoring and situational awareness in high-risk environments.",
-    tags: ["Safety", "Military", "AI Sensors", "Real-time Monitoring"],
+    title: "AI-Powered E-commerce Platform",
+    brand: "RetailNext",
+    description: "Full-stack e-commerce solution with intelligent product recommendations, real-time inventory management, and seamless payment integration processing $2M+ monthly.",
+    tags: ["E-commerce", "AI", "React", "Node.js"],
     imageUrl: "/lovable-uploads/93ab0638-8190-4ccf-897f-21fda7f4f5ad.png",
     isFeatured: true,
     link: "/projects/firecat",
-    details: `
-      FireCat Group aimed to enhance safety in high-risk environments. WRLDS Technologies provided the 6th SENSE solution with secure real-time data transmission, high-quality sensors resistant to extreme conditions, integrated AI-powered clothing, and a centralized control unit. Features include Man Down Alarm, GPS positioning, vital sign monitoring, and Panic Button. Benefits: life-saving technology, machine learning preventing false alarms, durable hardware with 7-10 year lifespan, washable sensors, and Plug & Play installation with 12-20 hours of operation per charge.
-    `
+    details: `Built a scalable e-commerce platform with AI-driven product recommendations, automated inventory management, and multi-payment gateway integration. Features include real-time analytics dashboard, customer behavior tracking, and automated marketing campaigns.`
   },
   {
     id: 2,
-    title: "Performance Athletic Footwear",
-    brand: "Global Sports Retail Leader",
-    description: "Smart Footwear R&D aiming to revolutionize development, fitting, and testing of athletic footwear.",
-    tags: ["Sports", "R&D", "Footwear", "Athletic Performance"],
+    title: "Enterprise SaaS Dashboard",
+    brand: "DataFlow Analytics",
+    description: "Modern analytics platform with real-time data visualization, custom reporting, and collaborative workspace features serving 10K+ enterprise users.",
+    tags: ["SaaS", "Analytics", "TypeScript", "Cloud"],
     imageUrl: "/lovable-uploads/b0622048-17b4-4c75-a3f0-6c9e17de1d09.png",
     link: "/projects/sport-retail"
   },
   {
     id: 3,
-    title: "Workwear Climate Control",
-    brand: "European Multinational Textile Producer",
-    description: "Fully integrated temperature controls for professionals working in extreme heat and cold. Modular approach to enable full-body systems.",
-    tags: ["Climate Control", "Workwear", "Temperature Regulation", "Extreme Conditions"],
+    title: "Mobile Fitness Application",
+    brand: "FitTech Pro",
+    description: "Cross-platform fitness app with AI workout plans, progress tracking, social features, and wearable device integration used by 50K+ active users.",
+    tags: ["Mobile", "React Native", "AI", "Health"],
     imageUrl: "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png",
     link: "/projects/workwear"
   },
   {
     id: 4,
-    title: "Ice Hockey Elite Skill Tracker",
-    brand: "Mars Blades",
-    description: "R&D product evaluating data from single IMU embedded in the hockey shoe. Aim: establish motion patterns that lead to ultimate acceleration, speed, and maneuverability.",
-    tags: ["Ice Hockey", "Motion Analysis", "Performance Tracking", "Sports"],
+    title: "Real-time Collaboration Tool",
+    brand: "TeamSync",
+    description: "Cloud-based collaboration platform with video conferencing, document sharing, project management, and WebSocket-powered real-time updates.",
+    tags: ["Collaboration", "WebRTC", "Cloud", "Real-time"],
     imageUrl: "/lovable-uploads/c30e0487-2fa0-41d1-9a0b-699cb2855388.png",
     link: "/projects/hockey"
   },
   {
     id: 5,
-    title: "Dog Activity Counter",
-    brand: "UK Insurance Giant",
-    description: "R&D project embedding a step counter in a dog collar. Measures daily activity and sends real-time data to the cloud for veterinary consultancies.",
-    tags: ["Pet Technology", "Insurance", "Activity Tracking", "R&D"],
+    title: "AI Content Management System",
+    brand: "ContentHub",
+    description: "Intelligent CMS with AI-powered content generation, SEO optimization, multi-channel publishing, and advanced analytics for content creators.",
+    tags: ["CMS", "AI", "Content", "SEO"],
     imageUrl: "/lovable-uploads/d5ce901e-2ce0-4f2a-bce1-f0ca5d6192df.png",
     link: "/projects/pet-tracker"
   }
@@ -129,18 +127,18 @@ const Projects = () => {
   return <section id="projects" ref={projectsRef} className="bg-white py-[50px] w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className={`text-center mb-10 max-w-3xl mx-auto transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">
-            Customer Cases
+          <div className="inline-block mb-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
+            Portfolio
           </div>
           <h2 className="text-3xl font-bold mb-3">
-            Connected Products in Market
+            Digital Solutions in Production
           </h2>
-          <p className="text-gray-600">
-            See how we've turned ambitious product visions into market-ready solutions generating real revenue across multiple industries.
+          <p className="text-muted-foreground">
+            See how we've transformed ideas into powerful digital products serving thousands of users and generating real business value.
           </p>
           {isMobile && (
             <div className="flex items-center justify-center mt-4 animate-pulse-slow">
-              <div className="flex items-center text-blue-500">
+              <div className="flex items-center text-primary">
                 <ChevronLeft size={16} />
                 <p className="text-sm mx-1">Swipe to navigate</p>
                 <ChevronRight size={16} />
@@ -165,16 +163,16 @@ const Projects = () => {
                 className={`absolute top-0 w-full max-w-md transform transition-all duration-500 ${getCardAnimationClass(index)}`} 
                 style={{ transitionDelay: `${index * 50}ms` }}
               >
-                <Card className="overflow-hidden h-[500px] border border-gray-100 shadow-sm hover:shadow-md flex flex-col">
+                <Card className="overflow-hidden h-[500px] border border-primary/10 shadow-sm hover:shadow-md flex flex-col">
                   <div 
-                    className="relative bg-black p-6 flex items-center justify-center h-48 overflow-hidden"
+                    className="relative bg-gradient-to-br from-primary to-accent p-6 flex items-center justify-center h-48 overflow-hidden"
                     style={{
                       backgroundImage: `url(${project.imageUrl})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
                     }}
                   >
-                    <div className="absolute inset-0 bg-black/50"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-accent/80"></div>
                     <div className="relative z-10 flex flex-col items-center justify-center">
                       <h3 className="text-2xl font-bold text-white mb-2">{project.brand.toUpperCase()}</h3>
                       <div className="w-12 h-1 bg-white mb-2"></div>
@@ -184,20 +182,20 @@ const Projects = () => {
                   
                   <CardContent className="p-6 flex flex-col flex-grow">
                     <div className="mb-4">
-                      <h3 className="text-xl font-bold mb-1 text-gray-800 group-hover:text-gray-500 transition-colors">
+                      <h3 className="text-xl font-bold mb-1 text-foreground group-hover:text-primary transition-colors">
                         {project.title}
                       </h3>
-                      <p className="text-gray-500 text-sm font-medium">{project.brand}</p>
+                      <p className="text-muted-foreground text-sm font-medium">{project.brand}</p>
                     </div>
                     
-                    <p className="text-gray-600 text-sm mb-4 flex-grow">{project.description}</p>
+                    <p className="text-muted-foreground text-sm mb-4 flex-grow">{project.description}</p>
                     
                     <div className="mt-auto">
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tags.map((tag, idx) => (
                           <span 
                             key={idx} 
-                            className="px-2 py-1 bg-gray-50 text-gray-600 rounded-full text-xs animate-pulse-slow" 
+                            className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs animate-pulse-slow" 
                             style={{ animationDelay: `${idx * 300}ms` }}
                           >
                             {tag}
@@ -207,16 +205,16 @@ const Projects = () => {
                       
                       <Link 
                         to={project.link} 
-                        className="text-gray-500 flex items-center hover:underline relative overflow-hidden group"
+                        className="text-primary flex items-center hover:underline relative overflow-hidden group"
                         onClick={() => {
                           if (project.link.startsWith('/')) {
                             window.scrollTo(0, 0);
                           }
                         }}
                       >
-                        <span className="relative z-10">Learn more</span>
+                        <span className="relative z-10">View case study</span>
                         <ArrowRight className="ml-2 w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />
-                        <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
+                        <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                       </Link>
                     </div>
                   </CardContent>
@@ -228,7 +226,7 @@ const Projects = () => {
           {!isMobile && (
             <>
               <button 
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center text-gray-500 hover:bg-white z-30 shadow-md transition-all duration-300 hover:scale-110" 
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center text-primary hover:bg-white z-30 shadow-md transition-all duration-300 hover:scale-110" 
                 onClick={() => setActiveProject(prev => (prev - 1 + projects.length) % projects.length)}
                 aria-label="Previous project"
               >
@@ -236,7 +234,7 @@ const Projects = () => {
               </button>
               
               <button 
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center text-gray-500 hover:bg-white z-30 shadow-md transition-all duration-300 hover:scale-110" 
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center text-primary hover:bg-white z-30 shadow-md transition-all duration-300 hover:scale-110" 
                 onClick={() => setActiveProject(prev => (prev + 1) % projects.length)}
                 aria-label="Next project"
               >
@@ -249,7 +247,7 @@ const Projects = () => {
             {projects.map((_, idx) => (
               <button 
                 key={idx} 
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${activeProject === idx ? 'bg-gray-500 w-5' : 'bg-gray-200 hover:bg-gray-300'}`} 
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${activeProject === idx ? 'bg-primary w-5' : 'bg-primary/30 hover:bg-primary/50'}`} 
                 onClick={() => setActiveProject(idx)}
                 aria-label={`Go to project ${idx + 1}`}
               />

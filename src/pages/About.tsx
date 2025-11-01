@@ -18,7 +18,7 @@ const About = () => {
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="max-w-6xl mx-auto">
-            <Link to="/" className="inline-flex items-center text-gray-500 hover:text-gray-700 mb-6 transition-colors">
+            <Link to="/" className="inline-flex items-center text-muted-foreground hover:text-foreground mb-6 transition-colors">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Home
             </Link>
@@ -29,7 +29,7 @@ const About = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              About WRLDS Technologies
+              About Vertex Digital
             </motion.h1>
             
             <div className="prose prose-lg max-w-none">
@@ -37,9 +37,9 @@ const About = () => {
                 initial={{ opacity: 0 }} 
                 animate={{ opacity: 1 }} 
                 transition={{ duration: 0.5, delay: 0.2 }} 
-                className="text-xl text-gray-600 mb-12"
+                className="text-xl text-muted-foreground mb-12"
               >
-                We're an end-to-end smart product development partner with 7+ years of experience turning connected product visions into market reality.
+                We're a full-service digital agency with expertise in web development, mobile apps, cloud infrastructure, and AI integration. We transform ideas into powerful digital solutions.
               </motion.p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -50,13 +50,13 @@ const About = () => {
                   className="space-y-6"
                 >
                   <h2 className="text-3xl font-bold">Our Mission</h2>
-                  <p className="text-gray-600">
-                    At WRLDS Technologies, we transform connected product ideas into market-ready solutions by 
-                    combining hardware engineering, software & AI development, and production expertise under one roof.
+                  <p className="text-muted-foreground">
+                    At Vertex Digital, we believe exceptional digital experiences drive business growth. We partner with companies 
+                    to build scalable web applications, mobile solutions, and intelligent systems that solve real problems.
                   </p>
-                  <p className="text-gray-600">
-                    We believe that the future belongs to intelligent, connected products that enhance human capabilities 
-                    and improve quality of life across industries.
+                  <p className="text-muted-foreground">
+                    Whether you're a startup launching your first product or an enterprise modernizing your digital infrastructure, 
+                    we bring the technical expertise and strategic thinking to make your vision a reality.
                   </p>
                 </motion.div>
                 
@@ -64,21 +64,21 @@ const About = () => {
                   initial={{ opacity: 0, x: 20 }} 
                   animate={{ opacity: 1, x: 0 }} 
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="bg-gray-50 rounded-2xl p-8 border border-gray-100"
+                  className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10"
                 >
-                  <h3 className="text-2xl font-bold mb-4">Our Three Pillars</h3>
+                  <h3 className="text-2xl font-bold mb-4">Our Core Services</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Hardware Engineering:</strong> Circuit design, mechanical engineering, and connectivity solutions.</span>
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span><strong>Web Development:</strong> React, Next.js, and modern frameworks for responsive web applications.</span>
                     </li>
                     <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Software & AI:</strong> Embedded firmware, cloud platforms, mobile apps, and machine learning.</span>
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span><strong>Mobile Apps:</strong> Native iOS/Android and cross-platform solutions with React Native.</span>
                     </li>
                     <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-gray-700 mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Production & Scale:</strong> Manufacturing partnerships, certification, and market deployment.</span>
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span><strong>Cloud & AI:</strong> Scalable infrastructure, APIs, databases, and AI-powered features.</span>
                     </li>
                   </ul>
                 </motion.div>
@@ -91,21 +91,21 @@ const About = () => {
                 className="mb-16"
               >
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-                <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
-                  <p className="text-gray-600 mb-4">
-                    We started with the ambition to make an inherently scattered and complex IoT development landscape 
-                    modular, accessible, and available to brands across industries. After successfully raising funding 
-                    for development, we spent years building our comprehensive technology platform.
+                <div className="bg-white rounded-xl border border-primary/10 p-8 shadow-sm">
+                  <p className="text-muted-foreground mb-4">
+                    Vertex Digital was founded with a vision to make enterprise-grade digital solutions accessible to companies 
+                    of all sizes. We saw too many businesses struggling with fragmented development teams, missed deadlines, 
+                    and technical debt from poorly architected systems.
                   </p>
-                  <p className="text-gray-600 mb-4">
-                    The goal was to turn all the scattered hardware and software building blocks into simple modules 
-                    to be assembled like Lego. During this time we worked with a range of customers, building prototypes 
-                    and full products to ensure our platform had real-world applicability.
+                  <p className="text-muted-foreground mb-4">
+                    Our team combines decades of experience from leading tech companies with startup agility. We've built 
+                    everything from e-commerce platforms processing millions in transactions to mobile apps with hundreds of 
+                    thousands of active users.
                   </p>
-                  <p className="text-gray-600">
-                    By 2023, we had reached a technology maturity level that allowed us to work at enterprise scale. 
-                    Since then, we have successfully launched multiple connected products in market, from sports equipment 
-                    to safety gear, proving our end-to-end development capabilities.
+                  <p className="text-muted-foreground">
+                    Today, we work with forward-thinking companies who understand that digital excellence is a competitive 
+                    advantage. Our clients range from venture-backed startups to established enterprises, all united by 
+                    their commitment to delivering exceptional digital experiences.
                   </p>
                 </div>
               </motion.div>
@@ -116,40 +116,40 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="mb-16"
               >
-                <h2 className="text-3xl font-bold mb-6">Our Team</h2>
-                <p className="text-gray-600 mb-8">
-                  Our diverse team combines expertise in hardware engineering, software development, AI/machine learning, 
-                  and industry-specific knowledge to deliver comprehensive IoT solutions.
+                <h2 className="text-3xl font-bold mb-6">Our Leadership</h2>
+                <p className="text-muted-foreground mb-8">
+                  Our team brings together expertise in software architecture, product design, DevOps, and business strategy 
+                  to deliver comprehensive digital solutions.
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
                     {
-                      name: "Felix von Heland",
+                      name: "Alex Thompson",
                       role: "CEO and Founder",
-                      bio: "Leading WRLDS with a vision to democratize IoT product development across industries.",
+                      bio: "Leading Vertex with a vision to democratize access to world-class digital development.",
                       image: "/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png"
                     },
                     {
-                      name: "Niek Bijman",
-                      role: "Software Lead",
-                      bio: "Specializing in cloud infrastructure, APIs, and scalable software architectures.",
+                      name: "Sarah Chen",
+                      role: "Head of Engineering",
+                      bio: "Expert in scalable architecture, cloud infrastructure, and high-performance systems.",
                       image: "/lovable-uploads/e502f601-c519-43a8-86f5-5fa89ae50d2f.png"
                     },
                     {
-                      name: "Chengjie Li",
-                      role: "Hardware Lead",
-                      bio: "Expert in embedded systems, circuit design, and hardware-software integration.",
+                      name: "Marcus Rodriguez",
+                      role: "Head of Product",
+                      bio: "Specialist in user experience, product strategy, and turning insights into features.",
                       image: "/lovable-uploads/3de85ddd-15e1-4216-9697-f91abb9a47ce.png"
                     },
                     {
-                      name: "Love",
+                      name: "Emily Foster",
                       role: "COO",
-                      bio: "Overseeing operations and ensuring successful product launches from development to market.",
+                      bio: "Ensuring seamless project delivery, client satisfaction, and operational excellence.",
                       image: "/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
                     }
                   ].map((member, i) => (
-                    <Card key={i} className="bg-gray-50 border border-gray-100 overflow-hidden">
+                    <Card key={i} className="bg-gradient-to-br from-secondary to-white border border-primary/10 overflow-hidden">
                       <CardContent className="p-6">
                         <div className="flex flex-col items-center text-center">
                           <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden">
@@ -160,8 +160,8 @@ const About = () => {
                             />
                           </div>
                           <h3 className="font-bold text-lg">{member.name}</h3>
-                          <p className="text-gray-500 text-sm mb-2">{member.role}</p>
-                          <p className="text-gray-600 text-sm">{member.bio}</p>
+                          <p className="text-muted-foreground text-sm mb-2">{member.role}</p>
+                          <p className="text-muted-foreground text-sm">{member.bio}</p>
                         </div>
                       </CardContent>
                     </Card>
@@ -170,8 +170,8 @@ const About = () => {
               </motion.div>
             </div>
             
-            <div className="mt-16 pt-8 border-t border-gray-200">
-              <Link to="/careers" className="inline-flex items-center px-5 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group">
+            <div className="mt-16 pt-8 border-t border-primary/10">
+              <Link to="/careers" className="inline-flex items-center px-5 py-3 bg-gradient-to-r from-primary to-accent text-white rounded-lg hover:opacity-90 transition-all group shadow-lg">
                 Join Our Team
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
