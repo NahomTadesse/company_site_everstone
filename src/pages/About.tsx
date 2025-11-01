@@ -39,7 +39,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.2 }} 
                 className="text-xl text-muted-foreground mb-12"
               >
-                We're a full-service digital agency with expertise in web development, mobile apps, cloud infrastructure, and AI integration. We transform ideas into powerful digital solutions.
+                We're a comprehensive digital solutions provider specializing in custom software development, enterprise systems, data analytics, strategic consulting, and AI integration. From ERP systems to mobile apps, we deliver scalable solutions that drive measurable business outcomes.
               </motion.p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -51,12 +51,15 @@ const About = () => {
                 >
                   <h2 className="text-3xl font-bold">Our Mission</h2>
                   <p className="text-muted-foreground">
-                    At Vertex Digital, we believe exceptional digital experiences drive business growth. We partner with companies 
-                    to build scalable web applications, mobile solutions, and intelligent systems that solve real problems.
+                    At Vertex Digital, we believe that exceptional digital solutions are the cornerstone of modern business success. 
+                    We partner with organizations to build custom enterprise software, implement data-driven strategies, and develop 
+                    intelligent systems that transform operations and unlock growth.
                   </p>
                   <p className="text-muted-foreground">
-                    Whether you're a startup launching your first product or an enterprise modernizing your digital infrastructure, 
-                    we bring the technical expertise and strategic thinking to make your vision a reality.
+                    From healthcare management platforms to sophisticated ERP systems, from predictive analytics to strategic digital 
+                    transformation—we bring deep technical expertise, industry knowledge, and strategic thinking to every engagement. 
+                    Whether you're a startup building your first product or an enterprise modernizing legacy systems, we deliver 
+                    solutions that scale with your ambitions.
                   </p>
                 </motion.div>
                 
@@ -67,18 +70,26 @@ const About = () => {
                   className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10"
                 >
                   <h3 className="text-2xl font-bold mb-4">Our Core Services</h3>
-                  <ul className="space-y-3">
+                  <ul className="space-y-4">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Web Development:</strong> React, Next.js, and modern frameworks for responsive web applications.</span>
+                      <span><strong>Custom Software Development:</strong> Enterprise Resource Planning (ERP) systems, Healthcare Management platforms, Student Information Systems (SIS), and bespoke business applications tailored to your unique workflows and compliance requirements.</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Mobile Apps:</strong> Native iOS/Android and cross-platform solutions with React Native.</span>
+                      <span><strong>Data Analytics & Intelligence:</strong> Transform raw data into actionable insights with predictive modeling, business intelligence dashboards, real-time analytics, and machine learning solutions that drive informed decision-making.</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
-                      <span><strong>Cloud & AI:</strong> Scalable infrastructure, APIs, databases, and AI-powered features.</span>
+                      <span><strong>Digital Consulting:</strong> Strategic technology roadmapping, digital transformation planning, system architecture review, and technology stack optimization to align your tech investments with business objectives.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span><strong>Web & Mobile Development:</strong> High-performance web applications using React, Next.js, and modern frameworks, plus native iOS/Android and cross-platform mobile solutions with seamless user experiences.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span><strong>Cloud Infrastructure & AI:</strong> Scalable cloud architectures on AWS, Azure, and GCP, with AI-powered features, microservices, APIs, and intelligent automation that grows with your business.</span>
                     </li>
                   </ul>
                 </motion.div>
@@ -93,19 +104,22 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <div className="bg-white rounded-xl border border-primary/10 p-8 shadow-sm">
                   <p className="text-muted-foreground mb-4">
-                    Vertex Digital was founded with a vision to make enterprise-grade digital solutions accessible to companies 
-                    of all sizes. We saw too many businesses struggling with fragmented development teams, missed deadlines, 
-                    and technical debt from poorly architected systems.
+                    Vertex Digital was founded with a vision to make enterprise-grade digital solutions accessible to organizations 
+                    of all sizes. We witnessed too many businesses struggling with legacy systems, siloed data, and technology partners 
+                    who couldn't translate business needs into scalable solutions. We knew there was a better way.
                   </p>
                   <p className="text-muted-foreground mb-4">
-                    Our team combines decades of experience from leading tech companies with startup agility. We've built 
-                    everything from e-commerce platforms processing millions in transactions to mobile apps with hundreds of 
-                    thousands of active users.
+                    Our team brings together decades of experience from Fortune 500 tech leaders, successful startups, and specialized 
+                    domains like healthcare, education, and enterprise software. We've architected ERP systems managing complex supply 
+                    chains, built healthcare platforms handling sensitive patient data with HIPAA compliance, developed student information 
+                    systems serving thousands of institutions, and created data analytics solutions that have transformed how companies 
+                    make strategic decisions.
                   </p>
                   <p className="text-muted-foreground">
-                    Today, we work with forward-thinking companies who understand that digital excellence is a competitive 
-                    advantage. Our clients range from venture-backed startups to established enterprises, all united by 
-                    their commitment to delivering exceptional digital experiences.
+                    Today, we partner with forward-thinking organizations across healthcare, education, retail, finance, and technology 
+                    sectors who understand that digital excellence is a competitive imperative. From venture-backed startups needing 
+                    MVP development to enterprises requiring complex system integration and digital transformation—we deliver solutions 
+                    that are secure, scalable, and purpose-built for your industry.
                   </p>
                 </div>
               </motion.div>
