@@ -8,50 +8,64 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform with AI",
-    brand: "RetailNext",
-    description: "Full-stack e-commerce solution with intelligent product recommendations, real-time inventory management, and seamless payment integration processing $2M+ monthly.",
-    tags: ["E-commerce", "AI", "React", "Node.js"],
+    title: "Healthcare Management System",
+    brand: "MediCare Solutions",
+    description: "Comprehensive healthcare information system with patient records management, appointment scheduling, electronic prescriptions, lab integration, billing, insurance claims, and HIPAA-compliant data security serving 15+ hospitals and 200K+ patients.",
+    tags: ["Healthcare", "ERP", "React", "PostgreSQL", "FHIR"],
     imageUrl: "/lovable-uploads/93ab0638-8190-4ccf-897f-21fda7f4f5ad.png",
     isFeatured: true,
     link: "/projects/firecat",
-    details: `Built a scalable e-commerce platform with AI-driven product recommendations, automated inventory management, and multi-payment gateway integration. Features include real-time analytics dashboard, customer behavior tracking, and automated marketing campaigns.`
+    details: `Built a complete healthcare management platform with patient portal, doctor dashboard, pharmacy integration, lab results system, and comprehensive reporting. Features include appointment management, telemedicine capabilities, prescription management, and real-time notifications.`
   },
   {
     id: 2,
-    title: "Business Intelligence Suite",
-    brand: "DataFlow Analytics",
-    description: "Enterprise analytics platform with interactive dashboards, predictive modeling, custom KPI tracking, and real-time data pipelines serving Fortune 500 clients.",
-    tags: ["Analytics", "BI", "Python", "PostgreSQL"],
+    title: "Student Information System",
+    brand: "EduTech University",
+    description: "Enterprise-grade student management platform with admissions, enrollment, grade management, attendance tracking, parent portal, timetable generation, examination system, and comprehensive analytics serving 50K+ students across multiple campuses.",
+    tags: ["Education", "SaaS", "React", "Node.js", "MongoDB"],
     imageUrl: "/lovable-uploads/b0622048-17b4-4c75-a3f0-6c9e17de1d09.png",
-    link: "/projects/sport-retail"
+    link: "/projects/sport-retail",
+    details: `Developed an all-in-one student management system with role-based access for administrators, teachers, students, and parents. Includes course management, assignment tracking, gradebook, financial management, library system, and mobile app integration.`
   },
   {
     id: 3,
-    title: "Digital Transformation Project",
-    brand: "Enterprise Corp",
-    description: "Full-scale consulting engagement: modernized legacy systems, cloud migration strategy, microservices architecture, and agile transformation for 500+ person organization.",
-    tags: ["Consulting", "Cloud", "Strategy", "DevOps"],
+    title: "Enterprise Resource Planning System",
+    brand: "GlobalCorp Industries",
+    description: "Custom ERP solution integrating finance, HR, inventory, procurement, manufacturing, supply chain, CRM, and analytics. Automated workflows, real-time reporting, and multi-location support for 1000+ employee organization with $50M+ annual revenue.",
+    tags: ["ERP", "Enterprise", "Java", "Oracle", "SAP"],
     imageUrl: "/lovable-uploads/c30e0487-2fa0-41d1-9a0b-699cb2855388.png",
-    link: "/projects/hockey"
+    link: "/projects/hockey",
+    details: `Built comprehensive ERP system with modules for financial management, human resources, inventory control, procurement, production planning, sales, and customer relationship management. Includes advanced reporting, workflow automation, and third-party integrations.`
   },
   {
     id: 4,
-    title: "Mobile Fitness Application",
-    brand: "FitTech Pro",
-    description: "Cross-platform fitness app with AI workout plans, progress tracking, social features, and wearable device integration used by 50K+ active users.",
-    tags: ["Mobile", "React Native", "AI", "Health"],
+    title: "E-Commerce Platform with AI",
+    brand: "RetailNext",
+    description: "Full-stack e-commerce solution with AI-driven product recommendations, intelligent search, dynamic pricing, inventory management, multi-vendor support, payment integration, order fulfillment automation processing $5M+ monthly transactions.",
+    tags: ["E-commerce", "AI", "React", "Microservices"],
     imageUrl: "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png",
-    link: "/projects/workwear"
+    link: "/projects/workwear",
+    details: `Developed scalable e-commerce platform with personalized product recommendations using machine learning, automated inventory management, multi-payment gateway integration, customer behavior analytics, automated marketing campaigns, and comprehensive admin dashboard.`
   },
   {
     id: 5,
-    title: "Real-time Analytics Dashboard",
-    brand: "MetricsIQ",
-    description: "Live data visualization platform with predictive analytics, automated alerts, custom reporting, and multi-source data integration for data-driven decision making.",
-    tags: ["Analytics", "Real-time", "D3.js", "WebSocket"],
+    title: "Business Intelligence & Analytics Suite",
+    brand: "DataFlow Analytics",
+    description: "Enterprise BI platform with interactive dashboards, predictive analytics, custom KPI tracking, real-time data pipelines, automated reporting, data warehouse integration, and ML-powered forecasting serving Fortune 500 clients with petabytes of data.",
+    tags: ["Analytics", "BI", "Python", "Spark", "Tableau"],
     imageUrl: "/lovable-uploads/d5ce901e-2ce0-4f2a-bce1-f0ca5d6192df.png",
-    link: "/projects/pet-tracker"
+    link: "/projects/pet-tracker",
+    details: `Created comprehensive business intelligence suite with real-time data visualization, predictive modeling, automated insights generation, custom reporting engine, data integration from multiple sources, and self-service analytics capabilities for business users.`
+  },
+  {
+    id: 6,
+    title: "Digital Transformation Consulting",
+    brand: "Enterprise Solutions Corp",
+    description: "Full-scale consulting engagement: assessed legacy systems, designed cloud-native architecture, led migration to AWS microservices, implemented DevOps/CI-CD pipelines, agile transformation, and trained 500+ staff achieving 40% cost reduction and 3x faster deployment.",
+    tags: ["Consulting", "Cloud", "AWS", "DevOps", "Agile"],
+    imageUrl: "/lovable-uploads/93ab0638-8190-4ccf-897f-21fda7f4f5ad.png",
+    link: "/projects/firecat",
+    details: `Led comprehensive digital transformation: modernized monolithic applications to microservices, migrated infrastructure to cloud, established DevOps practices, implemented automated testing and deployment, trained development teams, and established governance frameworks.`
   }
 ];
 
@@ -131,10 +145,10 @@ const Projects = () => {
             Portfolio
           </div>
           <h2 className="text-3xl font-bold mb-3">
-            Digital Solutions in Production
+            Enterprise Software & Digital Solutions
           </h2>
           <p className="text-muted-foreground">
-            See how we've transformed ideas into powerful digital products serving thousands of users and generating real business value.
+            Explore our portfolio of custom enterprise systems, ERP solutions, healthcare platforms, student management systems, e-commerce applications, and analytics platforms serving thousands of users and driving millions in business value.
           </p>
           {isMobile && (
             <div className="flex items-center justify-center mt-4 animate-pulse-slow">

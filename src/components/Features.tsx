@@ -16,44 +16,51 @@ const Features = () => {
 
   const features = [
     {
+      icon: <Code className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Custom Software Development",
+      description: "Enterprise Resource Planning (ERP) systems, Student Management Systems, Healthcare Information Systems, and industry-specific software solutions tailored to your exact requirements and workflows.",
+      image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png",
+      category: "Custom Software"
+    },
+    {
       icon: <Globe className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Web Applications",
-      description: "Progressive web apps, SaaS platforms, and custom web solutions built with React, Next.js, and modern frameworks.",
+      description: "Progressive web apps, enterprise SaaS platforms, e-commerce solutions, and custom web applications built with React, Next.js, Vue, and cutting-edge frameworks for optimal performance and user experience.",
       image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png",
       category: "Web"
     },
     {
       icon: <Smartphone className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Mobile Development",
-      description: "Native iOS and Android apps, or cross-platform solutions with React Native for maximum reach and performance.",
+      description: "Native iOS and Android applications, or cross-platform solutions with React Native and Flutter. Full-featured mobile apps with offline capabilities, push notifications, and seamless device integration.",
       image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png",
       category: "Mobile"
     },
     {
       icon: <Cloud className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Cloud & Backend",
-      description: "Scalable APIs, microservices architecture, database design, and cloud infrastructure on AWS, Azure, or GCP.",
+      description: "Scalable RESTful APIs, GraphQL endpoints, microservices architecture, serverless functions, comprehensive database design, and robust cloud infrastructure on AWS, Azure, or Google Cloud Platform.",
       image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png",
       category: "Cloud"
     },
     {
       icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "AI Integration",
-      description: "Machine learning models, chatbots, intelligent automation, and AI-powered features to enhance your applications.",
+      title: "AI & Machine Learning",
+      description: "Custom machine learning models, intelligent chatbots with NLP, computer vision systems, predictive analytics, automated decision engines, and AI-powered features that transform user experiences.",
       image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png",
       category: "AI"
     },
     {
       icon: <Database className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Data Analytics",
-      description: "Business intelligence dashboards, data visualization, predictive analytics, and insights-driven reporting systems.",
+      title: "Data Analytics & BI",
+      description: "Interactive business intelligence dashboards, real-time data visualization, advanced predictive analytics, KPI tracking systems, automated reporting, and data warehouse solutions for data-driven decision making.",
       image: "/lovable-uploads/cbd073dd-ecad-4643-bf2b-efc3d5846994.png",
       category: "Analytics"
     },
     {
       icon: <Cpu className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Digital Consulting",
-      description: "Strategic technology consulting, digital transformation roadmaps, and architecture design for enterprise solutions.",
+      description: "Strategic technology consulting, comprehensive digital transformation roadmaps, enterprise architecture design, cloud migration strategies, and expert guidance to accelerate your organization's digital evolution.",
       image: "/lovable-uploads/6fdd3d0d-5dca-470a-a845-bd7b07bff599.png",
       category: "Consulting"
     }
@@ -78,18 +85,18 @@ const Features = () => {
   const pillars = [
     {
       icon: <Code className="w-6 h-6 text-primary" />,
-      title: "Web & Mobile",
-      description: "Modern responsive websites and progressive web apps using React, TypeScript, and cutting-edge frameworks for optimal performance."
+      title: "Custom Software & Development",
+      description: "Enterprise software solutions including ERP systems, healthcare management platforms, student information systems, and bespoke applications. We also build modern web and mobile apps with React, React Native, and cloud-native architectures."
     },
     {
       icon: <Database className="w-6 h-6 text-primary" />,
-      title: "Data & Analytics",
-      description: "Transform raw data into actionable insights with business intelligence, visualization, and predictive analytics solutions."
+      title: "Data Analytics & AI",
+      description: "Transform raw data into strategic insights with business intelligence dashboards, predictive analytics, machine learning models, and AI-powered automation that drives measurable business outcomes."
     },
     {
       icon: <Layers className="w-6 h-6 text-primary" />,
-      title: "Consulting & Strategy",
-      description: "Strategic technology consulting, digital transformation roadmaps, and expert guidance to accelerate your digital journey."
+      title: "Consulting & Digital Strategy",
+      description: "Strategic technology consulting for digital transformation, enterprise architecture design, cloud migration planning, process optimization, and technology roadmaps that align with your business objectives."
     }
   ];
 
@@ -102,19 +109,19 @@ const Features = () => {
               What We Do
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Full-Stack Digital Solutions
+              Complete Digital Solutions for Modern Business
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              From concept to launch, we build powerful web and mobile applications with modern technology stacks and seamless user experiences.
+              From custom enterprise software and ERP systems to cutting-edge web applications and AI integration, we deliver comprehensive technology solutions that transform how you do business. Built with modern architecture, designed for scale, and optimized for performance.
             </p>
           </div>
 
           {/* Three Pillars Section */}
           <div className="mb-20">
             <div className="text-center mb-12">
-              <h3 className="text-2xl font-bold mb-4">Our Core Services</h3>
+              <h3 className="text-2xl font-bold mb-4">Our Core Expertise</h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                End-to-end digital product development with expertise in modern web technologies, mobile platforms, and cloud infrastructure.
+                Comprehensive digital services spanning custom enterprise software development, modern web and mobile applications, advanced analytics, AI integration, cloud infrastructure, and strategic technology consulting. We deliver end-to-end solutions backed by deep technical expertise and proven methodologies.
               </p>
             </div>
             

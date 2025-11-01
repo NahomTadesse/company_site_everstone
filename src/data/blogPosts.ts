@@ -34,73 +34,75 @@ export interface ContentSection {
 export const blogPosts: BlogPost[] = [
   {
     id: '1',
-    title: 'Data-Driven Decision Making: Implementing Business Analytics',
-    slug: 'data-driven-decision-making-business-analytics',
-    excerpt: 'Transform raw data into actionable insights with modern analytics tools, dashboards, and intelligence strategies.',
-    date: 'February 5, 2025',
+    title: 'Building Custom ERP Systems: A Complete Enterprise Guide',
+    slug: 'building-custom-erp-systems-enterprise-guide',
+    excerpt: 'Learn how to design, develop, and deploy enterprise resource planning systems that integrate finance, HR, inventory, and operations into unified platforms.',
+    date: 'February 15, 2025',
     author: 'Vertex Digital',
-    category: 'Data Analytics',
+    category: 'Enterprise Software',
     imageUrl: '/lovable-uploads/cbd073dd-ecad-4643-bf2b-efc3d5846994.png',
     keywords: [
-      'data analytics',
-      'business intelligence',
-      'data visualization',
-      'KPI tracking',
-      'analytics dashboards',
-      'predictive analytics',
-      'big data'
+      'ERP systems',
+      'enterprise resource planning',
+      'custom software development',
+      'business management software',
+      'enterprise software',
+      'system integration',
+      'workflow automation'
     ],
-    metaDescription: 'Comprehensive guide to implementing data analytics and business intelligence for competitive advantage.',
+    metaDescription: 'Complete guide to building custom ERP systems that integrate all business processes into unified enterprise platforms.',
     content: [
       {
         type: 'paragraph',
-        content: 'In today\'s data-rich environment, companies that effectively harness analytics gain significant competitive advantages. Yet many organizations struggle to transform raw data into meaningful insights that drive action.'
+        content: 'Enterprise Resource Planning (ERP) systems are the backbone of modern organizations, integrating finance, human resources, supply chain, manufacturing, and customer operations into unified platforms. Building a custom ERP offers precise alignment with your business processes and competitive advantages that off-the-shelf solutions cannot match.'
       },
       {
         type: 'heading',
-        content: 'The Analytics Maturity Journey'
+        content: 'When to Build vs Buy'
       },
       {
         type: 'paragraph',
-        content: 'Most companies progress through distinct analytics phases: descriptive (what happened), diagnostic (why it happened), predictive (what will happen), and prescriptive (what should we do). Understanding your current stage helps prioritize investments.'
+        content: 'While commercial ERPs like SAP and Oracle serve many companies well, custom development makes sense when your processes are unique, highly regulated, or require deep industry-specific functionality. Custom ERPs offer unlimited flexibility, no per-user licensing costs, and complete control over features and data.'
       },
       {
         type: 'stats',
         statsData: [
           {
-            value: '73%',
-            label: 'Executives say data-driven decisions are crucial',
+            value: '63%',
+            label: 'Enterprises report improved efficiency with custom ERP',
             icon: 'TrendingUp'
           },
           {
-            value: '5x',
-            label: 'ROI improvement with proper analytics',
+            value: '2.5x',
+            label: 'ROI improvement over packaged solutions in 3 years',
             icon: 'DollarSign'
           },
           {
-            value: '40%',
-            label: 'Time saved with automated reporting',
+            value: '45%',
+            label: 'Reduction in operational costs post-implementation',
             icon: 'Clock'
           }
         ]
       },
       {
         type: 'heading',
-        content: 'Building Effective Dashboards'
+        content: 'Core ERP Modules to Consider'
       },
       {
         type: 'icon-list',
         items: [
-          'Design KPI dashboards that highlight critical metrics at a glance with visual hierarchies',
-          'Implement real-time data pipelines for up-to-the-minute insights and alerts',
-          'Create role-specific views so each team sees relevant data in their context',
-          'Use predictive models to forecast trends and identify opportunities early',
-          'Integrate multiple data sources into unified analytics platforms'
+          'Financial Management: General ledger, accounts payable/receivable, budgeting, financial reporting, multi-currency support',
+          'Human Resources: Employee records, payroll, benefits, time tracking, performance management, recruitment',
+          'Inventory & Warehouse: Stock management, multi-location tracking, barcode/RFID, automated reordering',
+          'Procurement: Purchase orders, supplier management, approval workflows, contract management',
+          'Manufacturing & Production: Bill of materials, production planning, shop floor control, quality management',
+          'Sales & CRM: Lead management, opportunity tracking, quotations, order processing, customer service',
+          'Project Management: Resource allocation, time tracking, milestone tracking, budget management'
         ]
       },
       {
         type: 'quote',
-        content: 'The goal isn\'t just to collect data—it\'s to create intelligence that drives better, faster decisions across your organization.'
+        content: 'A well-designed ERP system doesn\'t just automate processes—it transforms how your organization operates, providing real-time visibility and enabling data-driven decisions across all departments.'
       }
     ]
   },
