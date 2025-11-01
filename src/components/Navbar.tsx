@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" alt="WRLDS Technologies Logo" className="h-8 w-auto" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Vertex</span>
             </Link>
           </div>
           
@@ -74,38 +74,38 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-gray-700 hover:text-gray-900">
-                    Customer Cases
+                    Portfolio
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
                         <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">6th SENSE Safety</div>
-                          <p className="text-sm text-gray-500">IoT sensors for firefighter protection</p>
+                          <div className="font-medium">E-commerce Platform</div>
+                          <p className="text-sm text-gray-500">Full-stack retail solution with payment integration</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/projects/sport-retail" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Better Hockey</div>
-                          <p className="text-sm text-gray-500">Connected sports equipment development</p>
+                          <div className="font-medium">Mobile Fitness App</div>
+                          <p className="text-sm text-gray-500">Cross-platform health and wellness application</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/projects/workwear" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Industrial Workwear</div>
-                          <p className="text-sm text-gray-500">Smart PPE for extreme environments</p>
+                          <div className="font-medium">SaaS Dashboard</div>
+                          <p className="text-sm text-gray-500">Enterprise analytics and reporting platform</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/projects/hockey" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">AirHive Tracking</div>
-                          <p className="text-sm text-gray-500">Smart equipment for Berg Trampolines</p>
+                          <div className="font-medium">Real-time Chat App</div>
+                          <p className="text-sm text-gray-500">Messaging platform with WebSocket technology</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/projects/pet-tracker" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Pet Activity Monitoring</div>
-                          <p className="text-sm text-gray-500">IoT solutions for pet health tracking</p>
+                          <div className="font-medium">AI-Powered CRM</div>
+                          <p className="text-sm text-gray-500">Smart customer relationship management system</p>
                         </Link>
                       </li>
                     </ul>
@@ -114,24 +114,21 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-gray-700 hover:text-gray-900">
-                    Learn More
+                    Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
                         <Link to="/tech-details" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Technology Platform</div>
-                          <p className="text-sm text-gray-500">Our IoT development platform and capabilities</p>
+                          <div className="font-medium">Technology Stack</div>
+                          <p className="text-sm text-gray-500">Modern frameworks and tools we use</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/development-process" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">Development Process</div>
-                          <p className="text-sm text-gray-500">5-phase approach from idea to market</p>
+                          <p className="text-sm text-gray-500">Agile workflow from concept to launch</p>
                         </Link>
-                      </li>
-                      <li>
-                        
                       </li>
                     </ul>
                   </NavigationMenuContent>
@@ -154,8 +151,8 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <button onClick={() => scrollToSection('contact')} className="px-4 py-2 rounded-md transition-colors bg-gray-200 text-gray-700 hover:bg-gray-300">
-                    Contact Us
+                  <button onClick={() => scrollToSection('contact')} className="px-4 py-2 rounded-md transition-colors bg-gradient-to-r from-primary to-accent text-white hover:opacity-90">
+                    Get Started
                   </button>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -188,20 +185,20 @@ const Navbar = () => {
             About Us
           </Link>
           
-          {/* Simplified Customer Cases - no dropdown */}
+          {/* Simplified Portfolio - no dropdown */}
           <Link to="/projects/firecat" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
-            Customer Cases
+            Portfolio
           </Link>
           
-          {/* Simplified Learn More - no dropdown */}
+          {/* Simplified Services - no dropdown */}
           <Link to="/tech-details" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
-            Learn More
+            Services
           </Link>
           
           <Link to="/blog" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
@@ -218,8 +215,8 @@ const Navbar = () => {
             Careers
           </Link>
           
-          <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-3 py-1.5 rounded-md text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">
-            Contact Us
+          <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-3 py-1.5 rounded-md text-sm text-white bg-gradient-to-r from-primary to-accent hover:opacity-90">
+            Get Started
           </button>
         </div>
       </div>

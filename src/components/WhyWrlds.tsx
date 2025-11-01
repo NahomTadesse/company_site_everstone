@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Layers, BarChart, AlertTriangle, Clock4, Rocket, Zap, Sparkles, ArrowRight, Award, Target, Shield, ChartBar } from "lucide-react";
+import { Code, Zap, Users, TrendingUp, Rocket, Award, ArrowRight, Target, Shield, ChartBar } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Link } from "react-router-dom";
 
@@ -79,17 +79,17 @@ const WhyWrlds = () => {
       }
     }
   };
-  return <section id="why-wrlds" className="relative py-16 md:py-24 bg-white overflow-hidden">
+  return <section id="why-vertex" className="relative py-16 md:py-24 bg-gradient-to-br from-secondary to-white overflow-hidden">
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center mb-12 md:mb-16" initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: "-100px"
       }} variants={containerVariants}>
-          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
-            Why WRLDS?
+          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3">
+            Why Choose Vertex Digital?
           </motion.h2>
-          <motion.p variants={itemVariants} className="text-gray-600 text-lg max-w-3xl mx-auto">
-            In an industry where complexity leads to failure, we bring simplicity and expertise to ensure your success
+          <motion.p variants={itemVariants} className="text-muted-foreground text-lg max-w-3xl mx-auto">
+            We deliver exceptional digital products that combine technical excellence with business value
           </motion.p>
         </motion.div>
         
@@ -97,37 +97,37 @@ const WhyWrlds = () => {
         once: true,
         margin: "-100px"
       }} variants={containerVariants}>
-          <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
-            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-              <BarChart className="w-8 h-8 text-gray-700" />
+          <motion.div variants={itemVariants} className="bg-gradient-to-br from-primary/10 to-accent/10 p-6 rounded-xl border border-primary/20 text-center hover:shadow-lg transition-all">
+            <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+              <Code className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={7} suffix="+" /> Years
+            <h3 className="text-foreground text-2xl lg:text-3xl font-bold mb-3">
+              <AnimatedCounter end={98} suffix="%" /> Quality
             </h3>
-            <p className="text-gray-700">Building connected products across industries with multiple successful launches generating revenue</p>
+            <p className="text-muted-foreground">Clean, maintainable code with comprehensive testing and documentation</p>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
-            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-              <AlertTriangle className="w-8 h-8 text-gray-700" />
+          <motion.div variants={itemVariants} className="bg-gradient-to-br from-accent/10 to-primary/10 p-6 rounded-xl border border-accent/20 text-center hover:shadow-lg transition-all">
+            <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+              <Zap className="w-8 h-8 text-accent" />
             </div>
-            <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={60} suffix="%" /> 
+            <h3 className="text-foreground text-2xl lg:text-3xl font-bold mb-3">
+              <AnimatedCounter end={50} suffix="%" /> Faster
             </h3>
-            <p className="text-gray-700">
-              of IoT projects stall at the proof-of-concept stage due to fragmented expertise and poor coordination
+            <p className="text-muted-foreground">
+              Agile development process delivering results faster than traditional agencies
             </p>
           </motion.div>
           
-          <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
-            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-              <Clock4 className="w-8 h-8 text-gray-700" />
+          <motion.div variants={itemVariants} className="bg-gradient-to-br from-primary/10 to-accent/10 p-6 rounded-xl border border-primary/20 text-center hover:shadow-lg transition-all">
+            <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+              <Users className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={80} suffix="%" />
+            <h3 className="text-foreground text-2xl lg:text-3xl font-bold mb-3">
+              <AnimatedCounter end={100} suffix="%" /> 
             </h3>
-            <p className="text-gray-700">
-              Increase in time-to-market for IoT products over the past four years, creating costly delays
+            <p className="text-muted-foreground">
+              Transparent communication and collaboration throughout every project phase
             </p>
           </motion.div>
         </motion.div>
@@ -137,59 +137,59 @@ const WhyWrlds = () => {
           margin: "-100px"
         }} variants={containerVariants}>
           <motion.div variants={itemVariants} className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-              What WRLDS Does for You
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+              What We Deliver
             </h3>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We transform your ideas into market-ready solutions with tangible benefits for your business
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Transform your business with solutions designed for growth and user satisfaction
             </p>
           </motion.div>
           
           <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-white p-6 rounded-xl border border-primary/10 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <BarChart className="w-6 h-6 text-gray-700" />
+                <div className="bg-primary/10 rounded-full p-3 mr-4">
+                  <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">New Revenue Products</h4>
-                  <p className="text-gray-700">Create high-margin, sensor-enabled products for new revenue streams.</p>
+                  <h4 className="text-xl font-bold text-foreground mb-2">Scalable Architecture</h4>
+                  <p className="text-muted-foreground">Built to grow with your business, handling increased traffic and features seamlessly.</p>
                 </div>
               </div>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-white p-6 rounded-xl border border-accent/10 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <Sparkles className="w-6 h-6 text-gray-700" />
+                <div className="bg-accent/10 rounded-full p-3 mr-4">
+                  <Award className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Innovation That Attracts</h4>
-                  <p className="text-gray-700">Break through to dream clients with tech that makes you stand out.</p>
+                  <h4 className="text-xl font-bold text-foreground mb-2">Modern UI/UX</h4>
+                  <p className="text-muted-foreground">Beautiful, intuitive interfaces that users love and convert visitors into customers.</p>
                 </div>
               </div>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-white p-6 rounded-xl border border-primary/10 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <Zap className="w-6 h-6 text-gray-700" />
+                <div className="bg-primary/10 rounded-full p-3 mr-4">
+                  <Zap className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Comfort-Zone Development</h4>
-                  <p className="text-gray-700">We develop frontier tech while you stay in your comfort zone.</p>
+                  <h4 className="text-xl font-bold text-foreground mb-2">Performance Optimized</h4>
+                  <p className="text-muted-foreground">Lightning-fast load times and smooth interactions for the best user experience.</p>
                 </div>
               </div>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
+            <motion.div variants={itemVariants} className="bg-white p-6 rounded-xl border border-accent/10 hover:shadow-lg transition-all">
               <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <Rocket className="w-6 h-6 text-gray-700" />
+                <div className="bg-accent/10 rounded-full p-3 mr-4">
+                  <Rocket className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Brand-Building Leaps</h4>
-                  <p className="text-gray-700">We enable hardware/software leaps that define your brand's future.</p>
+                  <h4 className="text-xl font-bold text-foreground mb-2">Future-Ready Technology</h4>
+                  <p className="text-muted-foreground">Stay ahead with cutting-edge frameworks and tools that evolve with your needs.</p>
                 </div>
               </div>
             </motion.div>
@@ -199,9 +199,9 @@ const WhyWrlds = () => {
             <Link 
               to="/development-process" 
               onClick={() => window.scrollTo(0, 0)}
-              className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-accent text-white rounded-lg hover:opacity-90 transition-all group shadow-lg"
             >
-              Learn more about our structured development process
+              Discover Our Process
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>

@@ -70,13 +70,9 @@ const Footer = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
-            <img 
-              src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" 
-              alt="WRLDS Technologies Logo" 
-              className="h-10 w-auto mb-6 invert" // Added invert to make logo white
-            />
+            <span className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6 inline-block">Vertex Digital</span>
             <p className="text-gray-300 mb-6">
-              WRLDS Technologies is your end-to-end smart product development partner. We combine hardware engineering, software & AI, and production expertise to turn connected product visions into market reality.
+              Vertex Digital transforms your ideas into powerful web and mobile applications. We combine modern development practices, cutting-edge technology, and user-centric design to create digital solutions that drive growth.
             </p>
             <p className="text-gray-300 mb-6">
               Hornsgatan 110<br />
@@ -134,7 +130,7 @@ const Footer = () => {
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} WRLDS Technologies. All rights reserved.
+            © {new Date().getFullYear()} Vertex Digital. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link to="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>

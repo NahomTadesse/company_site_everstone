@@ -21,10 +21,10 @@ const Index = () => {
   return (
     <PageLayout>
       <SEO 
-        title="WRLDS - End-to-End Smart Product Development Partner" 
-        description="WRLDS Technologies: 7+ years transforming product visions into market-ready connected solutions. Hardware, software, and manufacturing expertise."
+        title="Vertex Digital - Modern Web & Mobile Development" 
+        description="Vertex Digital: Expert web and mobile development that brings your vision to life. React, Node.js, cloud infrastructure, and AI integration."
         imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
-        keywords={['IoT development', 'connected product development', 'hardware software integration', 'smart product partner', 'end-to-end IoT solutions', 'rapid prototyping', 'product development']}
+        keywords={['web development', 'mobile app development', 'React development', 'full-stack development', 'cloud solutions', 'AI integration', 'custom software']}
       />
       <Hero />
       <Features />

@@ -63,12 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				wrlds: {
-					teal: '#9F9EA1',
-					dark: '#3F3F3F',
-					light: '#F6F6F7',
-					accent: '#C8C8C9',
-					muted: '#F1F1F1'
+				vertex: {
+					purple: 'hsl(262 83% 58%)',
+					blue: 'hsl(217 91% 60%)',
+					dark: 'hsl(222 47% 11%)',
+					light: 'hsl(220 14% 96%)',
+					muted: 'hsl(215 16% 47%)'
 				}
 			},
 			borderRadius: {

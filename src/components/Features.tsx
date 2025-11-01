@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Activity, Shield, HardHat, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare, Building, Cpu, Layers } from "lucide-react";
+import { Smartphone, Globe, Cloud, Zap, ArrowRight, Code, CheckCircle, Rocket, Database, Layout, MessageSquare, Layers, Cpu } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -16,32 +16,32 @@ const Features = () => {
 
   const features = [
     {
-      icon: <Activity className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Sports & Health Tech",
-      description: "Connected equipment and wearables with real-time performance analytics, injury prevention, and health monitoring.",
+      icon: <Globe className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Web Applications",
+      description: "Progressive web apps, SaaS platforms, and custom web solutions built with React, Next.js, and modern frameworks.",
       image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png",
-      category: "Sports"
+      category: "Web"
     },
     {
-      icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Safety & Defense",
-      description: "Smart PPE and tactical gear with environmental monitoring, threat detection, and real-time health tracking.",
+      icon: <Smartphone className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Mobile Development",
+      description: "Native iOS and Android apps, or cross-platform solutions with React Native for maximum reach and performance.",
       image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png",
-      category: "Safety"
+      category: "Mobile"
     },
     {
-      icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Industrial IoT",
-      description: "Predictive maintenance systems, asset tracking, and worker safety monitoring for industrial environments.",
+      icon: <Cloud className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Cloud & Backend",
+      description: "Scalable APIs, microservices architecture, database design, and cloud infrastructure on AWS, Azure, or GCP.",
       image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png",
-      category: "Industrial"
+      category: "Cloud"
     },
     {
-      icon: <Building className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Smart Cities",
-      description: "Environmental monitoring, traffic flow analysis, and infrastructure health systems for urban development.",
+      icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "AI Integration",
+      description: "Machine learning models, chatbots, intelligent automation, and AI-powered features to enhance your applications.",
       image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png",
-      category: "Cities"
+      category: "AI"
     }
   ];
 
@@ -63,19 +63,19 @@ const Features = () => {
 
   const pillars = [
     {
-      icon: <Cpu className="w-6 h-6 text-gray-700" />,
-      title: "Hardware Engineering",
-      description: "Circuit design, power management, mechanical engineering, and connectivity solutions that form the backbone of smart products."
+      icon: <Code className="w-6 h-6 text-primary" />,
+      title: "Web Development",
+      description: "Modern responsive websites and progressive web apps using React, TypeScript, and cutting-edge frameworks for optimal performance."
     },
     {
-      icon: <Code className="w-6 h-6 text-gray-700" />,
-      title: "Software & AI",
-      description: "Embedded firmware, cloud platforms, mobile applications, and machine learning that bring intelligence to connected devices."
+      icon: <Smartphone className="w-6 h-6 text-primary" />,
+      title: "Mobile Apps",
+      description: "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences."
     },
     {
-      icon: <Layers className="w-6 h-6 text-gray-700" />,
-      title: "Production & Scale",
-      description: "Manufacturing partnerships, certification management, and quality assurance for reliable market deployment."
+      icon: <Layers className="w-6 h-6 text-primary" />,
+      title: "Cloud & AI",
+      description: "Scalable cloud infrastructure, RESTful APIs, and AI-powered features that grow with your business needs."
     }
   ];
 
@@ -84,34 +84,34 @@ const Features = () => {
       <section id="features" className="py-16 md:py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">
+            <div className="inline-block mb-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
               What We Do
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              End-to-End Smart Product Development
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              Full-Stack Digital Solutions
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We combine hardware engineering, software development, and manufacturing expertise to turn your connected product vision into market reality.
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              From concept to launch, we build powerful web and mobile applications with modern technology stacks and seamless user experiences.
             </p>
           </div>
 
           {/* Three Pillars Section */}
           <div className="mb-20">
             <div className="text-center mb-12">
-              <h3 className="text-2xl font-bold mb-4">Our Three-Pillar Approach</h3>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Every successful connected product requires expertise across hardware, software, and manufacturing. We provide all three under one roof.
+              <h3 className="text-2xl font-bold mb-4">Our Core Services</h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                End-to-end digital product development with expertise in modern web technologies, mobile platforms, and cloud infrastructure.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {pillars.map((pillar, index) => (
-                <div key={index} className="text-center p-6 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors">
-                  <div className="w-12 h-12 bg-gray-200 flex items-center justify-center rounded-lg mx-auto mb-4">
+                <div key={index} className="text-center p-6 rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 hover:from-primary/10 hover:to-accent/10 transition-colors border border-primary/10">
+                  <div className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-lg mx-auto mb-4">
                     {pillar.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-3">{pillar.title}</h3>
-                  <p className="text-gray-600 text-sm">{pillar.description}</p>
+                  <p className="text-muted-foreground text-sm">{pillar.description}</p>
                 </div>
               ))}
             </div>
@@ -119,12 +119,12 @@ const Features = () => {
           
           {/* Industry Applications - Simplified grid */}
           <div className="text-center mb-8 max-w-3xl mx-auto feature-item">
-            <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-              Industry Applications
+            <div className="inline-block mb-2 px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">
+              Technology Stack
             </div>
-            <h3 className="text-2xl font-bold mb-4">Cross-Industry IoT Solutions</h3>
-            <p className="text-gray-600">
-              Our modular approach enables rapid development across diverse industries, from sports tech to smart cities.
+            <h3 className="text-2xl font-bold mb-4">Modern Development Solutions</h3>
+            <p className="text-muted-foreground">
+              We leverage the latest technologies and best practices to deliver scalable, maintainable applications.
             </p>
           </div>
           
@@ -144,7 +144,7 @@ const Features = () => {
                   />
                   <div className={cn(
                     "absolute inset-0 transition-opacity duration-300",
-                    hoveredFeature === index ? "bg-black/50" : "bg-black/70"
+                    hoveredFeature === index ? "bg-gradient-to-br from-primary/70 to-accent/70" : "bg-gradient-to-br from-primary/80 to-accent/80"
                   )}></div>
                 </div>
                 
@@ -165,17 +165,17 @@ const Features = () => {
       </section>
 
       {/* Development Process Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-secondary to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+            <div className="inline-block mb-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
               How We Work
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              From Concept to Commercial Success
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              From Idea to Launch
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our proven 5-phase methodology ensures your connected product vision becomes a market-ready solution faster than traditional approaches.
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Our agile development process ensures your project is delivered on time, within budget, and exceeds expectations.
             </p>
           </div>
 
@@ -185,32 +185,32 @@ const Features = () => {
                 {[
                   { 
                     phase: "01", 
-                    title: "Discovery & Strategy", 
-                    description: "Market research, requirements gathering, and feasibility analysis to define the optimal product approach.",
+                    title: "Discovery & Planning", 
+                    description: "Understanding your vision, defining requirements, and creating a strategic roadmap for success.",
                     icon: <MessageSquare className="h-8 w-8 text-white" />
                   },
                   { 
                     phase: "02", 
-                    title: "Design & Prototyping", 
-                    description: "Rapid prototyping using our modular technology library to validate concepts and gather early feedback.",
-                    icon: <Code className="h-8 w-8 text-white" />
+                    title: "Design & Prototype", 
+                    description: "Creating intuitive user interfaces and interactive prototypes to validate the user experience.",
+                    icon: <Layout className="h-8 w-8 text-white" />
                   },
                   { 
                     phase: "03", 
-                    title: "Development & Integration", 
-                    description: "Full-stack development combining hardware, software, and cloud platforms into cohesive solutions.",
-                    icon: <Zap className="h-8 w-8 text-white" />
+                    title: "Development & Testing", 
+                    description: "Building your application with clean code, automated testing, and continuous integration.",
+                    icon: <Code className="h-8 w-8 text-white" />
                   },
                   { 
                     phase: "04", 
-                    title: "Testing & Certification", 
-                    description: "Comprehensive testing, compliance verification, and certification management for market readiness.",
+                    title: "Quality Assurance", 
+                    description: "Rigorous testing across devices and browsers to ensure flawless functionality.",
                     icon: <CheckCircle className="h-8 w-8 text-white" />
                   },
                   { 
                     phase: "05", 
-                    title: "Launch & Scale", 
-                    description: "Market deployment, production scaling, and ongoing support to ensure commercial success.",
+                    title: "Launch & Support", 
+                    description: "Seamless deployment to production and ongoing maintenance to keep your app running smoothly.",
                     icon: <Rocket className="h-8 w-8 text-white" />
                   }
                 ].map((step, index) => (
@@ -218,12 +218,12 @@ const Features = () => {
                     <div className="p-1">
                       <Card className="h-80">
                         <CardContent className="flex flex-col items-center justify-center p-6 h-full text-center">
-                          <div className="bg-gray-700 rounded-full p-4 mb-4">
+                          <div className="bg-gradient-to-br from-primary to-accent rounded-full p-4 mb-4">
                             {step.icon}
                           </div>
-                          <div className="text-2xl font-bold text-gray-400 mb-2">{step.phase}</div>
+                          <div className="text-2xl font-bold text-muted-foreground mb-2">{step.phase}</div>
                           <h3 className="text-xl font-bold mb-4">{step.title}</h3>
-                          <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
+                          <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -238,45 +238,45 @@ const Features = () => {
               {[
                 { 
                   phase: "01", 
-                  title: "Discovery & Strategy", 
-                  description: "Market research, requirements gathering, and feasibility analysis to define the optimal product approach.",
+                  title: "Discovery & Planning", 
+                  description: "Understanding your vision, defining requirements, and creating a strategic roadmap for success.",
                   icon: <MessageSquare className="h-8 w-8 text-white" />
                 },
                 { 
                   phase: "02", 
-                  title: "Design & Prototyping", 
-                  description: "Rapid prototyping using our modular technology library to validate concepts and gather early feedback.",
-                  icon: <Code className="h-8 w-8 text-white" />
+                  title: "Design & Prototype", 
+                  description: "Creating intuitive user interfaces and interactive prototypes to validate the user experience.",
+                  icon: <Layout className="h-8 w-8 text-white" />
                 },
                 { 
                   phase: "03", 
-                  title: "Development & Integration", 
-                  description: "Full-stack development combining hardware, software, and cloud platforms into cohesive solutions.",
-                  icon: <Zap className="h-8 w-8 text-white" />
+                  title: "Development & Testing", 
+                  description: "Building your application with clean code, automated testing, and continuous integration.",
+                  icon: <Code className="h-8 w-8 text-white" />
                 },
                 { 
                   phase: "04", 
-                  title: "Testing & Certification", 
-                  description: "Comprehensive testing, compliance verification, and certification management for market readiness.",
+                  title: "Quality Assurance", 
+                  description: "Rigorous testing across devices and browsers to ensure flawless functionality.",
                   icon: <CheckCircle className="h-8 w-8 text-white" />
                 },
                 { 
                   phase: "05", 
-                  title: "Launch & Scale", 
-                  description: "Market deployment, production scaling, and ongoing support to ensure commercial success.",
+                  title: "Launch & Support", 
+                  description: "Seamless deployment to production and ongoing maintenance to keep your app running smoothly.",
                   icon: <Rocket className="h-8 w-8 text-white" />
                 }
               ].map((step, index) => (
                 <div key={index} className="text-center relative">
-                  <div className="bg-gray-700 rounded-full p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-primary to-accent rounded-full p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center shadow-lg">
                     {step.icon}
                   </div>
-                  <div className="text-2xl font-bold text-gray-400 mb-2">{step.phase}</div>
+                  <div className="text-2xl font-bold text-muted-foreground mb-2">{step.phase}</div>
                   <h3 className="text-lg font-bold mb-3">{step.title}</h3>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
+                  <p className="text-muted-foreground text-sm">{step.description}</p>
                   
                   {index < 4 && (
-                    <ArrowRight className="hidden md:block absolute top-8 -right-4 w-6 h-6 text-gray-300" />
+                    <ArrowRight className="hidden md:block absolute top-8 -right-4 w-6 h-6 text-primary/30" />
                   )}
                 </div>
               ))}
@@ -286,9 +286,9 @@ const Features = () => {
           <div className="text-center mt-12">
             <Button 
               onClick={scrollToContact}
-              className="bg-gray-700 text-white hover:bg-gray-800 px-8 py-3 text-lg"
+              className="bg-gradient-to-r from-primary to-accent text-white hover:opacity-90 px-8 py-3 text-lg shadow-lg"
             >
-              Start Your Project Journey
+              Start Your Project
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>
@@ -299,55 +299,55 @@ const Features = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+            <div className="inline-block mb-2 px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">
               Our Technology
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Modular Technology for Rapid Innovation
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Modern Tech Stack
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our proprietary modular approach combines proven components with custom innovations to achieve the fastest time-to-prototype in the industry.
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              We use proven technologies and frameworks to build reliable, scalable applications that stand the test of time.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full">
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-primary/10 h-full">
               <div className="flex flex-col items-center text-center">
-                <div className="bg-gray-50 rounded-full p-4 mb-4">
-                  <Box className="h-10 w-10 text-gray-700" />
+                <div className="bg-primary/10 rounded-full p-4 mb-4">
+                  <Code className="h-10 w-10 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Proprietary Modules</h3>
-                <p className="text-sm text-gray-600">Pre-validated hardware and software components from our 7+ years of development</p>
+                <h3 className="text-lg font-bold mb-2">Frontend Excellence</h3>
+                <p className="text-sm text-muted-foreground">React, Vue, Next.js, TypeScript, and modern CSS frameworks</p>
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full">
+            <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-accent/10 h-full">
               <div className="flex flex-col items-center text-center">
-                <div className="bg-gray-50 rounded-full p-4 mb-4">
-                  <Microchip className="h-10 w-10 text-gray-700" />
+                <div className="bg-accent/10 rounded-full p-4 mb-4">
+                  <Database className="h-10 w-10 text-accent" />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Vetted Off-the-Shelf</h3>
-                <p className="text-sm text-gray-600">Carefully selected commercial components that integrate seamlessly with our platform</p>
+                <h3 className="text-lg font-bold mb-2">Backend Power</h3>
+                <p className="text-sm text-muted-foreground">Node.js, Python, PostgreSQL, MongoDB, and serverless architecture</p>
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full">
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-primary/10 h-full">
               <div className="flex flex-col items-center text-center">
-                <div className="bg-gray-50 rounded-full p-4 mb-4">
-                  <Handshake className="h-10 w-10 text-gray-700" />
+                <div className="bg-primary/10 rounded-full p-4 mb-4">
+                  <Cloud className="h-10 w-10 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Production Partner Network</h3>
-                <p className="text-sm text-gray-600">Expert manufacturing partners for quality production at scale</p>
+                <h3 className="text-lg font-bold mb-2">Cloud Infrastructure</h3>
+                <p className="text-sm text-muted-foreground">AWS, Azure, GCP, Docker, Kubernetes, and CI/CD pipelines</p>
               </div>
             </div>
           </div>
 
           <div className="text-center">
-            <div className="inline-block mb-4 px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-              Result: Fastest Time-to-Market in the Industry
+            <div className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full text-sm font-medium">
+              Built for Scale, Performance & Security
             </div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Our modular approach reduces development time by 60% while maintaining the highest quality standards and enabling unique product differentiation.
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Every project we build is architected for growth, optimized for speed, and secured with industry best practices.
             </p>
           </div>
         </div>
