@@ -1,58 +1,326 @@
 
+// import { useState, useEffect } from 'react';
+// import { cn } from '@/lib/utils';
+// import { Menu, X, ChevronDown } from "lucide-react";
+// import { motion } from "framer-motion";
+// import { Link } from 'react-router-dom';
+// import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+
+// const Navbar = () => {
+//   const [isScrolled, setIsScrolled] = useState(false);
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (window.scrollY > 10) {
+//         setIsScrolled(true);
+//       } else {
+//         setIsScrolled(false);
+//       }
+//     };
+//     window.addEventListener('scroll', handleScroll);
+//     return () => window.removeEventListener('scroll', handleScroll);
+//   }, []);
+
+//   const toggleMenu = () => {
+//     setIsMenuOpen(!isMenuOpen);
+//   };
+
+//   const scrollToSection = (id: string) => {
+//     const element = document.getElementById(id);
+//     if (element) {
+//       element.scrollIntoView({
+//         behavior: 'smooth'
+//       });
+//     }
+//     setIsMenuOpen(false);
+//   };
+
+//   return (
+//     <motion.nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-white shadow-md border-b border-gray-200" initial={{
+//       opacity: 1,
+//       y: 0
+//     }} animate={{
+//       opacity: 1,
+//       y: 0
+//     }}>
+//       <div className="w-full px-4 sm:px-6 lg:px-8 mx-auto">
+//         <div className="flex items-center justify-between h-16">
+//           <div className="flex-shrink-0">
+//             <Link to="/" className="flex items-center">
+//               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Everstone Technologies</span>
+//             </Link>
+//           </div>
+          
+//           {/* Desktop Navigation */}
+//           <div className="hidden md:block">
+//             <NavigationMenu>
+//               <NavigationMenuList>
+//                 <NavigationMenuItem>
+//                   <Link to="/">
+//                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900")}>
+//                       Home
+//                     </NavigationMenuLink>
+//                   </Link>
+//                 </NavigationMenuItem>
+                
+//                 <NavigationMenuItem>
+//                   <Link to="/about">
+//                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900")}>
+//                       About Us
+//                     </NavigationMenuLink>
+//                   </Link>
+//                 </NavigationMenuItem>
+                
+//                 <NavigationMenuItem>
+//                   <NavigationMenuTrigger className="text-gray-700 hover:text-gray-900">
+//                     Portfolio
+//                   </NavigationMenuTrigger>
+//                   <NavigationMenuContent>
+//                     <ul className="grid gap-3 p-4 w-[400px]">
+//                       <li>
+//                         <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+//                           <div className="font-medium">Addis Book Delivery</div>
+//                           <p className="text-sm text-gray-500">An online bookstore with personalized recommendations and reading tracking</p>
+//                         </Link>
+//                       </li>
+//                       <li>
+//                         <Link to="/projects/sport-retail" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+//                           <div className="font-medium">Mayet Art</div>
+//                           <p className="text-sm text-gray-500">Virtual gallery showcasing contemporary artists with immersive 3D viewing</p>
+//                         </Link>
+//                       </li>
+//                       <li>
+//                         <Link to="/projects/workwear" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+//                           <div className="font-medium">N8stalgia</div>
+//                           <p className="text-sm text-gray-500">Marketplace for vintage and retro collectibles with authentication services</p>
+//                         </Link>
+//                       </li>
+//                       <li>
+//                         <Link to="/projects/hockey" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+//                           <div className="font-medium">Pizza Dashboard</div>
+//                           <p className="text-sm text-gray-500">Business intelligence dashboard for pizza chain operations and sales analytics</p>
+//                         </Link>
+//                       </li>
+//                       <li>
+//                         <Link to="/projects/pet-tracker" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+//                           <div className="font-medium">ATM Dashboard</div>
+//                           <p className="text-sm text-gray-500">Financial dashboard monitoring ATM network performance and cash management</p>
+//                         </Link>
+//                       </li>
+
+//                          <li>
+//                         <Link to="/projects/insuranceProj" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+//                           <div className="font-medium">Insurance Analytics</div>
+//                           <p className="text-sm text-gray-500">Comprehensive analytics platform for insurance risk assessment and claims</p>
+//                         </Link>
+//                       </li>
+//                     </ul>
+//                   </NavigationMenuContent>
+//                 </NavigationMenuItem>
+                
+//                 <NavigationMenuItem>
+//                   <NavigationMenuTrigger className="text-gray-700 hover:text-gray-900">
+//                     Services
+//                   </NavigationMenuTrigger>
+//                   <NavigationMenuContent>
+//                     <ul className="grid gap-3 p-4 w-[400px]">
+//                       <li>
+//                         <Link to="/tech-details" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+//                           <div className="font-medium">Technology Stack</div>
+//                           <p className="text-sm text-gray-500">Modern frameworks and tools we use</p>
+//                         </Link>
+//                       </li>
+//                       <li>
+//                         <Link to="/development-process" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+//                           <div className="font-medium">Development Process</div>
+//                           <p className="text-sm text-gray-500">Agile workflow from concept to launch</p>
+//                         </Link>
+//                       </li>
+//                     </ul>
+//                   </NavigationMenuContent>
+//                 </NavigationMenuItem>
+                
+//                 {/* <NavigationMenuItem>
+//                   <Link to="/blog">
+//                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900")}>
+//                       News
+//                     </NavigationMenuLink>
+//                   </Link>
+//                 </NavigationMenuItem> */}
+                
+//                 <NavigationMenuItem>
+//                   <Link to="/careers">
+//                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900")}>
+//                       Careers
+//                     </NavigationMenuLink>
+//                   </Link>
+//                 </NavigationMenuItem>
+                
+//                 <NavigationMenuItem>
+//                   <button onClick={() => scrollToSection('contact')} className="px-4 py-2 rounded-md transition-colors bg-gradient-to-r from-primary to-accent text-white hover:opacity-90">
+//                     Get Started
+//                   </button>
+//                 </NavigationMenuItem>
+//               </NavigationMenuList>
+//             </NavigationMenu>
+//           </div>
+          
+//           {/* Mobile menu button */}
+//           <div className="md:hidden">
+//             <button onClick={toggleMenu} className="focus:outline-none text-gray-700">
+//               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Mobile Navigation Menu - Reduced height and simplified */}
+//       <div className={cn("md:hidden transition-all duration-300 overflow-hidden w-full", isMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0")}>
+//         <div className="px-3 pt-2 pb-3 space-y-1 shadow-sm overflow-y-auto max-h-80 bg-white">
+//           <Link to="/" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
+//             setIsMenuOpen(false);
+//             window.scrollTo(0, 0);
+//           }}>
+//             Home
+//           </Link>
+          
+//           <Link to="/about" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
+//             setIsMenuOpen(false);
+//             window.scrollTo(0, 0);
+//           }}>
+//             About Us
+//           </Link>
+          
+//           {/* Simplified Portfolio - no dropdown */}
+//           <Link to="/projects/firecat" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
+//             setIsMenuOpen(false);
+//             window.scrollTo(0, 0);
+//           }}>
+//             Portfolio
+//           </Link>
+          
+//           {/* Simplified Services - no dropdown */}
+//           <Link to="/tech-details" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
+//             setIsMenuOpen(false);
+//             window.scrollTo(0, 0);
+//           }}>
+//             Services
+//           </Link>
+          
+//           <Link to="/blog" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
+//             setIsMenuOpen(false);
+//             window.scrollTo(0, 0);
+//           }}>
+//             News
+//           </Link>
+          
+//           <Link to="/careers" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
+//             setIsMenuOpen(false);
+//             window.scrollTo(0, 0);
+//           }}>
+//             Careers
+//           </Link>
+          
+//           <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-3 py-1.5 rounded-md text-sm text-white bg-gradient-to-r from-primary to-accent hover:opacity-90">
+//             Get Started
+//           </button>
+//         </div>
+//       </div>
+//     </motion.nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openMobileSection, setOpenMobileSection] = useState<string | null>(null);
 
+  /* ---------- Scroll handling ---------- */
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => setIsScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  /* ---------- Mobile helpers ---------- */
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(v => !v);
+    if (!isMenuOpen) setOpenMobileSection(null); // reset dropdowns when closing
+  };
+
+  const toggleSection = (section: string) => {
+    setOpenMobileSection(prev => (prev === section ? null : section));
+  };
+
+  const closeAll = () => {
+    setIsMenuOpen(false);
+    setOpenMobileSection(null);
   };
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-    setIsMenuOpen(false);
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    closeAll();
   };
 
+  /* ---------- Portfolio items (mobile) ---------- */
+  const portfolioItems = [
+    { to: "/projects/firecat", title: "Addis Books" },
+    { to: "/projects/sport-retail", title: "Mayet Art" },
+    { to: "/projects/workwear", title: "N8stalgia" },
+    { to: "/projects/hockey", title: "Pizza Dashboard" },
+    { to: "/projects/pet-tracker", title: "ATM Dashboard" },
+    { to: "/projects/insuranceProj", title: "Insurance Analytics" },
+  ];
+
+  /* ---------- Services items (mobile) ---------- */
+  const servicesItems = [
+    { to: "/tech-details", title: "Technology Stack" },
+    { to: "/development-process", title: "Development Process" },
+  ];
+
   return (
-    <motion.nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full bg-white shadow-md border-b border-gray-200" initial={{
-      opacity: 1,
-      y: 0
-    }} animate={{
-      opacity: 1,
-      y: 0
-    }}>
-      <div className="w-full px-4 sm:px-6 lg:px-8 mx-auto">
-        <div className="flex items-center justify-between h-16">
+    <motion.nav
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 w-full bg-white transition-all duration-300",
+        isScrolled ? "shadow-md border-b border-gray-200" : ""
+      )}
+      initial={{ y: 0, opacity: 1 }}
+      animate={{ y: 0, opacity: 1 }}
+    >
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+
+          {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Everstone Technologies</span>
+            <Link to="/" className="flex items-center" onClick={closeAll}>
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-2xl font-bold text-transparent">
+                Everstone Technologies
+              </span>
             </Link>
           </div>
-          
-          {/* Desktop Navigation */}
+
+          {/* ---------- Desktop Navigation ---------- */}
           <div className="hidden md:block">
             <NavigationMenu>
               <NavigationMenuList>
@@ -63,7 +331,7 @@ const Navbar = () => {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                
+
                 <NavigationMenuItem>
                   <Link to="/about">
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900")}>
@@ -71,54 +339,34 @@ const Navbar = () => {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                
+
+                {/* Portfolio */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-gray-700 hover:text-gray-900">
                     Portfolio
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 w-[400px]">
-                      <li>
-                        <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Addis Book Delivery</div>
-                          <p className="text-sm text-gray-500">An online bookstore with personalized recommendations and reading tracking</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/sport-retail" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Mayet Art</div>
-                          <p className="text-sm text-gray-500">Virtual gallery showcasing contemporary artists with immersive 3D viewing</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/workwear" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">N8stalgia</div>
-                          <p className="text-sm text-gray-500">Marketplace for vintage and retro collectibles with authentication services</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/hockey" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Pizza Dashboard</div>
-                          <p className="text-sm text-gray-500">Business intelligence dashboard for pizza chain operations and sales analytics</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/pet-tracker" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">ATM Dashboard</div>
-                          <p className="text-sm text-gray-500">Financial dashboard monitoring ATM network performance and cash management</p>
-                        </Link>
-                      </li>
-
-                         <li>
-                        <Link to="/projects/insuranceProj" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Insurance Analytics</div>
-                          <p className="text-sm text-gray-500">Comprehensive analytics platform for insurance risk assessment and claims</p>
-                        </Link>
-                      </li>
+                    <ul className="grid gap-3 p-4 w-[400px] lg:w-[500px] lg:grid-cols-2">
+                      {[
+                        { to: "/projects/booknest", title: "BookNest", desc: "Friendly book marketplace with smart recommendations" },
+                        { to: "/projects/mayet", title: "Mayet Art", desc: "Virtual gallery with 3D tours and artist tools" },
+                        { to: "/projects/n8stalgia", title: "N8stalgia", desc: "Vintage collectibles marketplace with live auctions" },
+                        { to: "/projects/pizza", title: "Pizza Dashboard", desc: "Sales analytics for pizza chain operations" },
+                        { to: "/projects/atm", title: "ATM Dashboard", desc: "ATM network performance and cash flow insights" },
+                        { to: "/projects/insurance", title: "Insurance Analytics", desc: "Risk assessment and claims portfolio analysis" },
+                      ].map(item => (
+                        <li key={item.to}>
+                          <Link to={item.to} className="block rounded-md p-3 hover:bg-gray-100">
+                            <div className="font-medium">{item.title}</div>
+                            <p className="text-sm text-gray-500">{item.desc}</p>
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                
+
+                {/* Services */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-gray-700 hover:text-gray-900">
                     Services
@@ -126,29 +374,21 @@ const Navbar = () => {
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
-                        <Link to="/tech-details" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                        <Link to="/tech-details" className="block rounded-md p-3 hover:bg-gray-100">
                           <div className="font-medium">Technology Stack</div>
-                          <p className="text-sm text-gray-500">Modern frameworks and tools we use</p>
+                          <p className="text-sm text-gray-500">Modern tools and frameworks</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/development-process" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                        <Link to="/development-process" className="block rounded-md p-3 hover:bg-gray-100">
                           <div className="font-medium">Development Process</div>
-                          <p className="text-sm text-gray-500">Agile workflow from concept to launch</p>
+                          <p className="text-sm text-gray-500">Agile from concept to launch</p>
                         </Link>
                       </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                
-                {/* <NavigationMenuItem>
-                  <Link to="/blog">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900")}>
-                      News
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem> */}
-                
+
                 <NavigationMenuItem>
                   <Link to="/careers">
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900")}>
@@ -156,73 +396,109 @@ const Navbar = () => {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                
+
                 <NavigationMenuItem>
-                  <button onClick={() => scrollToSection('contact')} className="px-4 py-2 rounded-md transition-colors bg-gradient-to-r from-primary to-accent text-white hover:opacity-90">
+                  <button
+                    onClick={() => scrollToSection('contact')}
+                    className="rounded-md bg-gradient-to-r from-primary to-accent px-4 py-2 text-white transition-opacity hover:opacity-90"
+                  >
                     Get Started
                   </button>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </div>
-          
-          {/* Mobile menu button */}
+
+          {/* ---------- Mobile toggle ---------- */}
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="focus:outline-none text-gray-700">
+            <button onClick={toggleMenu} className="text-gray-700 focus:outline-none">
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation Menu - Reduced height and simplified */}
-      <div className={cn("md:hidden transition-all duration-300 overflow-hidden w-full", isMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0")}>
-        <div className="px-3 pt-2 pb-3 space-y-1 shadow-sm overflow-y-auto max-h-80 bg-white">
-          <Link to="/" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+      {/* ---------- Mobile Menu (with dropdowns) ---------- */}
+      <div
+        className={cn(
+          "md:hidden overflow-hidden bg-white transition-all duration-300",
+          isMenuOpen ? "max-h-[650px] opacity-100" : "max-h-0 opacity-0"
+        )}
+      >
+        <div className="space-y-1 px-3 py-2">
+
+          {/* Home */}
+          <Link to="/" className="block rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50" onClick={closeAll}>
             Home
           </Link>
-          
-          <Link to="/about" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+
+          {/* About */}
+          <Link to="/about" className="block rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50" onClick={closeAll}>
             About Us
           </Link>
-          
-          {/* Simplified Portfolio - no dropdown */}
-          <Link to="/projects/firecat" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
-            Portfolio
-          </Link>
-          
-          {/* Simplified Services - no dropdown */}
-          <Link to="/tech-details" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
-            Services
-          </Link>
-          
-          <Link to="/blog" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
-            News
-          </Link>
-          
-          <Link to="/careers" className="block px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-50" onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+
+          {/* Portfolio dropdown */}
+          <div>
+            <button
+              onClick={() => toggleSection('portfolio')}
+              className="flex w-full items-center justify-between rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+            >
+              Portfolio
+              {openMobileSection === 'portfolio' ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+            </button>
+
+            {openMobileSection === 'portfolio' && (
+              <div className="mt-1 space-y-1 rounded-md bg-gray-50 pl-6">
+                {portfolioItems.map(item => (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    className="block rounded-md px-3 py-1.5 text-xs text-gray-600 hover:text-gray-900"
+                    onClick={closeAll}
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Services dropdown */}
+          <div>
+            <button
+              onClick={() => toggleSection('services')}
+              className="flex w-full items-center justify-between rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+            >
+              Services
+              {openMobileSection === 'services' ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+            </button>
+
+            {openMobileSection === 'services' && (
+              <div className="mt-1 space-y-1 rounded-md bg-gray-50 pl-6">
+                {servicesItems.map(item => (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    className="block rounded-md px-3 py-1.5 text-xs text-gray-600 hover:text-gray-900"
+                    onClick={closeAll}
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Careers */}
+          <Link to="/careers" className="block rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50" onClick={closeAll}>
             Careers
           </Link>
-          
-          <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-3 py-1.5 rounded-md text-sm text-white bg-gradient-to-r from-primary to-accent hover:opacity-90">
+
+          {/* Get Started */}
+          <button
+            onClick={() => scrollToSection('contact')}
+            className="w-full rounded-md bg-gradient-to-r from-primary to-accent px-3 py-2 text-left text-sm text-white hover:opacity-90"
+          >
             Get Started
           </button>
         </div>
