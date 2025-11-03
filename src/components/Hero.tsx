@@ -43,9 +43,9 @@ const Hero = () => {
       <div className="banner-container bg-black relative overflow-hidden h-screen w-full">
         <div className="absolute inset-0 bg-black w-full">
            <img 
-             src="/lovable-uploads/4bfa0d71-3ed2-4693-90b6-35142468907f.png" 
-             alt="Vertex Digital Team Collaboration" 
-             className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`} 
+             src="https://t3.ftcdn.net/jpg/05/04/70/88/360_F_504708859_U9PtI4cCanponR5HrsI7Cna9841UTDFb.jpg" 
+             alt="Everstone Technologies Team Collaboration" 
+             className={`w-full h-full object-cover  ${isMobile ? 'object-right' : 'object-center'}`} 
            />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-white"></div>
         </div>
@@ -54,10 +54,10 @@ const Hero = () => {
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <motion.div variants={itemVariants} className="-bottom-0 \xA7">
               <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight text-left">
-                Building Enterprise Software & Digital Solutions
+              Ready to Transform Your Business with Technology
               </motion.h1>
               <motion.p variants={itemVariants} className="text-lg sm:text-xl text-gray-300 mt-4 sm:mt-6 md:text-base text-left">
-                Custom ERP systems, healthcare platforms, student management software, web & mobile apps, data analytics, AI integration, and strategic consulting that drives business transformation.
+                Empowering businesses with cutting-edge IT services and solutions that drive growth, efficiency, and competitive advantage.
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8" variants={itemVariants}>
                 <button className="min-h-[44px] px-6 sm:px-8 py-3 bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-all shadow-lg hover:shadow-xl flex items-center justify-center group text-sm sm:text-base font-medium" onClick={e => {

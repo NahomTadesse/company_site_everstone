@@ -21,16 +21,16 @@ const Index = () => {
   return (
     <PageLayout>
       <SEO 
-        title="Vertex Digital - Custom Software, ERP, Healthcare & Enterprise Solutions" 
-        description="Vertex Digital: Custom enterprise software development, ERP systems, healthcare management, student information systems, web & mobile apps, data analytics, AI integration, and strategic technology consulting."
+        title="Everstone Technologies - Custom Software, ERP, Healthcare & Enterprise Solutions" 
+        description="Everstone Technologies: Custom enterprise software development, ERP systems, healthcare management, student information systems, web & mobile apps, data analytics, AI integration, and strategic technology consulting."
         imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
         keywords={['custom software development', 'ERP systems', 'healthcare management software', 'student information system', 'enterprise software', 'web development', 'mobile app development', 'data analytics', 'business intelligence', 'digital consulting', 'AI integration', 'cloud solutions', 'digital transformation']}
       />
       <Hero />
       <Features />
-      <WhyWrlds />
+      <WhyWrlds  Technologies />
       <Projects />
-      <BlogPreview />
+      {/* <BlogPreview /> */}
     </PageLayout>
   );
 };

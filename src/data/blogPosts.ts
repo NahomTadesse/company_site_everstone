@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'building-custom-erp-systems-enterprise-guide',
     excerpt: 'Learn how to design, develop, and deploy enterprise resource planning systems that integrate finance, HR, inventory, and operations into unified platforms.',
     date: 'February 15, 2025',
-    author: 'Vertex Digital',
+    author: 'Everstone Technologies',
     category: 'Enterprise Software',
     imageUrl: '/lovable-uploads/cbd073dd-ecad-4643-bf2b-efc3d5846994.png',
     keywords: [
@@ -112,7 +112,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'digital-transformation-strategic-roadmap',
     excerpt: 'Navigate your digital transformation journey with proven frameworks, best practices, and expert guidance.',
     date: 'January 28, 2025',
-    author: 'Vertex Digital',
+    author: 'Everstone Technologies',
     category: 'Digital Consulting',
     imageUrl: '/lovable-uploads/6fdd3d0d-5dca-470a-a845-bd7b07bff599.png',
     keywords: [
@@ -172,7 +172,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'scalable-web-applications-best-practices',
     excerpt: 'Learn the essential patterns and technologies for building web applications that scale from MVP to millions of users.',
     date: 'January 15, 2025',
-    author: 'Vertex Digital',
+    author: 'Everstone Technologies',
     category: 'Web Development',
     imageUrl: '/lovable-uploads/idea_to_launch_blog_post_pic',
     keywords: [
@@ -189,7 +189,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        content: 'Scalability is no longer optional in modern web development. Whether you\'re building a startup MVP or an enterprise platform, your architecture decisions today determine your ability to grow tomorrow. At Vertex Digital, we\'ve helped dozens of companies scale from thousands to millions of users.'
+        content: 'Scalability is no longer optional in modern web development. Whether you\'re building a startup MVP or an enterprise platform, your architecture decisions today determine your ability to grow tomorrow. At Everstone Technologies, we\'ve helped dozens of companies scale from thousands to millions of users.'
       },
       {
         type: 'heading',
@@ -272,7 +272,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'ai-integration-modern-applications',
     excerpt: 'Discover how to integrate AI and machine learning into your applications without the complexity or massive infrastructure costs.',
     date: 'December 28, 2024',
-    author: 'Vertex Digital',
+    author: 'Everstone Technologies',
     category: 'AI & Machine Learning',
     imageUrl: '/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png',
     keywords: [
@@ -336,7 +336,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'mobile-first-development-strategies',
     excerpt: 'Why mobile-first thinking creates better experiences across all devices and how to implement it effectively.',
     date: 'November 12, 2024',
-    author: 'Vertex Digital',
+    author: 'Everstone Technologies',
     category: 'Mobile Development',
     imageUrl: '/lovable-uploads/078a129e-0f98-4d91-af61-873687db1a04.png',
     keywords: [

@@ -34,13 +34,13 @@ export interface ContentSection {
 export const blogPosts: BlogPost[] = [
   {
     id: '9',
-    title: 'From a Textile Focus Back to the Full WRLDS Studio',
-    slug: 'from-textile-focus-to-full-wrlds-studio',
-    excerpt: 'Earlier this year we narrowed our focus to textile IoT to sharpen our stack. Now we\'re back to showing the full scope: WRLDS is an end-to-end IoT studio that takes ideas to field-tested products in weeks, then scales what works.',
+    title: 'From a Textile Focus Back to the Full Everstone Technologies Studio',
+    slug: 'from-textile-focus-to-full-Everstone Technologies-studio',
+    excerpt: 'Earlier this year we narrowed our focus to textile IoT to sharpen our stack. Now we\'re back to showing the full scope: Everstone Technologies is an end-to-end IoT studio that takes ideas to field-tested products in weeks, then scales what works.',
     date: 'October 20, 2025',
-    author: 'WRLDS Technologies',
+    author: 'Everstone Technologies Technologies',
     category: 'Company',
-    imageUrl: '/lovable-uploads/wrlds-studio-header.png',
+    imageUrl: '/lovable-uploads/Everstone Technologies-studio-header.png',
     keywords: [
       'end-to-end IoT studio',
       'IoT product development',
@@ -51,11 +51,11 @@ export const blogPosts: BlogPost[] = [
       'connected product studio',
       'prototype to production'
     ],
-    metaDescription: 'WRLDS Technologies expands from textile IoT focus to showcase 7+ years of end-to-end IoT development expertise.',
+    metaDescription: 'Everstone Technologies Technologies expands from textile IoT focus to showcase 7+ years of end-to-end IoT development expertise.',
     content: [
       {
         type: 'paragraph',
-        content: 'Earlier this year we narrowed WRLDS to textile IoT to sharpen our stack. That focus helped. Now we\'re describing the full scope of what we\'ve done for 7+ years. WRLDS Technologies is an end-to-end IoT studio. We take ideas to tangible, field-tested concepts in weeks, then scale what works.'
+        content: 'Earlier this year we narrowed Everstone Technologies to textile IoT to sharpen our stack. That focus helped. Now we\'re describing the full scope of what we\'ve done for 7+ years. Everstone Technologies Technologies is an end-to-end IoT studio. We take ideas to tangible, field-tested concepts in weeks, then scale what works.'
       },
       {
         type: 'heading',
@@ -158,11 +158,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '7',
-    title: 'From Concept to Market: How WRLDS Accelerates Connected Product Development',
+    title: 'From Concept to Market: How Everstone Technologies Accelerates Connected Product Development',
     slug: 'concept-to-market-connected-product-development',
     excerpt: 'Discover how our end-to-end development approach transforms ambitious product visions into market-ready solutions faster than traditional methods.',
     date: 'July 15, 2025',
-    author: 'WRLDS Technologies',
+    author: 'Everstone Technologies Technologies',
     category: 'Product Development',
     imageUrl: '/lovable-uploads/idea_to_launch_blog_post_pic',
     keywords: [
@@ -177,11 +177,11 @@ export const blogPosts: BlogPost[] = [
       'product development acceleration',
       'IoT consulting'
     ],
-    metaDescription: 'Learn how WRLDS transforms product concepts into market-ready connected solutions with our proven end-to-end development methodology.',
+    metaDescription: 'Learn how Everstone Technologies transforms product concepts into market-ready connected solutions with our proven end-to-end development methodology.',
     content: [
       {
         type: 'paragraph',
-        content: 'In today\'s competitive marketplace, the ability to quickly transform innovative ideas into market-ready connected products can determine business success. At WRLDS, we\'ve refined our development approach over 7+ years to eliminate common bottlenecks and accelerate time-to-market for ambitious product visions.'
+        content: 'In today\'s competitive marketplace, the ability to quickly transform innovative ideas into market-ready connected products can determine business success. At Everstone Technologies, we\'ve refined our development approach over 7+ years to eliminate common bottlenecks and accelerate time-to-market for ambitious product visions.'
       },
       {
         type: 'heading',
@@ -272,7 +272,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'wearable-safety-tech-protecting-workers-roi',
     excerpt: 'Discover how wearable safety technology puts worker wellbeing first while delivering measurable business benefits through injury prevention and enhanced workplace safety.',
     date: 'June 12, 2025',
-    author: 'WRLDS Technologies',
+    author: 'Everstone Technologies Technologies',
     category: 'Business',
     imageUrl: '/lovable-uploads/078a129e-0f98-4d91-af61-873687db1a04.png',
     keywords: [
@@ -392,11 +392,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '8',
-    title: 'The Modular Advantage: How WRLDS Achieves Fastest Time-to-Prototype',
+    title: 'The Modular Advantage: How Everstone Technologies Achieves Fastest Time-to-Prototype',
     slug: 'modular-advantage-fastest-time-to-prototype',
     excerpt: 'Learn how our proprietary modular technology approach enables the fastest prototyping in the industry while maintaining quality and reliability.',
     date: 'June 28, 2025',
-    author: 'WRLDS Technologies',
+    author: 'Everstone Technologies Technologies',
     category: 'Technology',
     imageUrl: '/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png',
     keywords: [
@@ -411,11 +411,11 @@ export const blogPosts: BlogPost[] = [
       'development efficiency',
       'product development speed'
     ],
-    metaDescription: 'Discover how WRLDS\' modular technology approach achieves industry-leading prototyping speed while ensuring quality and scalability.',
+    metaDescription: 'Discover how Everstone Technologies\' modular technology approach achieves industry-leading prototyping speed while ensuring quality and scalability.',
     content: [
       {
         type: 'paragraph',
-        content: 'In connected product development, speed often determines market success. Traditional approaches require building everything from scratch, leading to extended development cycles and increased risk. WRLDS has pioneered a modular technology approach that achieves the fastest time-to-prototype in the industry while maintaining the quality and reliability needed for commercial success.'
+        content: 'In connected product development, speed often determines market success. Traditional approaches require building everything from scratch, leading to extended development cycles and increased risk. Everstone Technologies has pioneered a modular technology approach that achieves the fastest time-to-prototype in the industry while maintaining the quality and reliability needed for commercial success.'
       },
       {
         type: 'heading',
@@ -427,7 +427,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        content: 'WRLDS Modular Methodology'
+        content: 'Everstone Technologies Modular Methodology'
       },
       {
         type: 'subheading',

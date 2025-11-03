@@ -19,6 +19,7 @@ import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
+import InsuranceProj from "./pages/insuranceProj"
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="/projects/sport-retail" element={<SportRetailProject />} />
             <Route path="/projects/workwear" element={<WorkwearProject />} />
             <Route path="/projects/hockey" element={<HockeyProject />} />
+            <Route path="/projects/insuranceProj" element={<InsuranceProj />} />
             <Route path="/projects/pet-tracker" element={<PetProject />} />
             <Route path="/tech-details" element={<TechDetails />} />
             <Route path="/development-process" element={<DevelopmentProcess />} />

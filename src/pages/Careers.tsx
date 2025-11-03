@@ -55,7 +55,7 @@ const Careers = () => {
                   transition={{ duration: 0.6 }}
                   className="mb-16"
                 >
-                  <h2 className="text-3xl font-bold mb-6">Why Join WRLDS?</h2>
+                  <h2 className="text-3xl font-bold mb-6">Why Join Everstone Technologies?</h2>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                     {[
                       {
@@ -79,22 +79,22 @@ const Careers = () => {
                   </div>
                   
                   <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm mt-12">
-                    <h3 className="font-bold text-xl mb-6">Contact Our COO</h3>
+                    <h3 className="font-bold text-xl mb-6">Contact Us</h3>
                     <div className="bg-white rounded-xl p-6 border border-gray-200">
                       <div className="flex flex-col items-center text-center">
                         <img 
                           src="/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
-                          alt="Love Anderberg"
+                          alt="Evestone"
                           className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
                         />
-                        <h3 className="text-xl font-bold text-gray-900">Love Anderberg</h3>
-                        <p className="text-gray-600 mb-4">COO</p>
+                        <h3 className="text-xl font-bold text-gray-900">Everstone Contact</h3>
+                        <p className="text-gray-600 mb-4">Contact</p>
                         <div className="flex flex-col space-y-3">
-                          <a href="mailto:love@wrlds.com" className="flex items-center text-gray-700 hover:text-blue-600">
+                          <a href="mailto:love@Everstone Technologies.com" className="flex items-center text-gray-700 hover:text-blue-600">
                             <Mail className="w-5 h-5 mr-2" />
-                            love@wrlds.com
+                            info@everstonetech.com
                           </a>
-                          <a 
+                          {/* <a 
                             href="https://www.linkedin.com/in/love-anderberg-67549a174/" 
                             target="_blank"
                             rel="noopener noreferrer"
@@ -102,10 +102,10 @@ const Careers = () => {
                           >
                             <Linkedin className="w-5 h-5 mr-2" />
                             LinkedIn Profile
-                          </a>
+                          </a> */}
                           <a href="tel:+46760149508" className="flex items-center text-gray-700 hover:text-blue-600">
                             <Phone className="w-5 h-5 mr-2" />
-                            076-014 95 08
+                            +251 990 060 812
                           </a>
                         </div>
                       </div>

@@ -86,7 +86,7 @@ const WhyWrlds = () => {
         margin: "-100px"
       }} variants={containerVariants}>
           <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3">
-            Why Choose Vertex Digital?
+            Why Choose Everstone Technologies?
           </motion.h2>
           <motion.p variants={itemVariants} className="text-muted-foreground text-lg max-w-3xl mx-auto">
             We deliver exceptional digital products that combine technical excellence with business value

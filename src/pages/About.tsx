@@ -29,7 +29,7 @@ const About = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              About Vertex Digital
+              About Everstone Technologies
             </motion.h1>
             
             <div className="prose prose-lg max-w-none">
@@ -39,7 +39,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.2 }} 
                 className="text-xl text-muted-foreground mb-12"
               >
-                We're a comprehensive digital solutions provider specializing in custom software development, enterprise systems, data analytics, strategic consulting, and AI integration. From ERP systems to mobile apps, we deliver scalable solutions that drive measurable business outcomes.
+                we are a dynamic and innovative tech startup dedicated to delivering cutting-edge digital solutions tailored to your business needs. Founded with a vision to bridge the gap between technology and real-world challenges, we specialize in custom software development, web and mobile applications, AI-driven automation, and cloud solutions.
               </motion.p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -51,7 +51,7 @@ const About = () => {
                 >
                   <h2 className="text-3xl font-bold">Our Mission</h2>
                   <p className="text-muted-foreground">
-                    At Vertex Digital, we believe that exceptional digital solutions are the cornerstone of modern business success. 
+                    At Everstone Technologies, we believe that exceptional digital solutions are the cornerstone of modern business success. 
                     We partner with organizations to build custom enterprise software, implement data-driven strategies, and develop 
                     intelligent systems that transform operations and unlock growth.
                   </p>
@@ -95,7 +95,7 @@ const About = () => {
                 </motion.div>
               </div>
               
-              <motion.div 
+              {/* <motion.div 
                 initial={{ opacity: 0, y: 20 }} 
                 animate={{ opacity: 1, y: 0 }} 
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -104,7 +104,7 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <div className="bg-white rounded-xl border border-primary/10 p-8 shadow-sm">
                   <p className="text-muted-foreground mb-4">
-                    Vertex Digital was founded with a vision to make enterprise-grade digital solutions accessible to organizations 
+                    Everstone Technologies was founded with a vision to make enterprise-grade digital solutions accessible to organizations 
                     of all sizes. We witnessed too many businesses struggling with legacy systems, siloed data, and technology partners 
                     who couldn't translate business needs into scalable solutions. We knew there was a better way.
                   </p>
@@ -177,15 +177,15 @@ const About = () => {
                     </Card>
                   ))}
                 </div>
-              </motion.div>
+              </motion.div> */}
             </div>
             
-            <div className="mt-16 pt-8 border-t border-primary/10">
+            {/* <div className="mt-16 pt-8 border-t border-primary/10">
               <Link to="/careers" className="inline-flex items-center px-5 py-3 bg-gradient-to-r from-primary to-accent text-white rounded-lg hover:opacity-90 transition-all group shadow-lg">
                 Join Our Team
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -18,7 +18,7 @@ const Features = () => {
     {
       icon: <Code className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Custom Software Development",
-      description: "Enterprise Resource Planning (ERP) systems, Student Management Systems, Healthcare Information Systems, and industry-specific software solutions tailored to your exact requirements and workflows.",
+      description: "Tailored software solutions designed to address your unique business needs, enhancing efficiency and productivity.",
       image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png",
       category: "Custom Software"
     },
@@ -43,13 +43,13 @@ const Features = () => {
       image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png",
       category: "Cloud"
     },
-    {
-      icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "AI & Machine Learning",
-      description: "Custom machine learning models, intelligent chatbots with NLP, computer vision systems, predictive analytics, automated decision engines, and AI-powered features that transform user experiences.",
-      image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png",
-      category: "AI"
-    },
+    // {
+    //   icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+    //   title: "AI & Machine Learning",
+    //   description: "Custom machine learning models, intelligent chatbots with NLP, computer vision systems, predictive analytics, automated decision engines, and AI-powered features that transform user experiences.",
+    //   image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png",
+    //   category: "AI"
+    // },
     {
       icon: <Database className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Data Analytics & BI",

@@ -34,7 +34,7 @@ const Footer = () => {
         from_name: "Website Subscriber",
         from_email: email,
         message: `New subscription request from the website footer.`,
-        to_name: 'WRLDS Team',
+        to_name: 'Everstone Technologies Team',
         reply_to: email
       };
       
@@ -70,24 +70,24 @@ const Footer = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
-            <span className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6 inline-block">Vertex Digital</span>
+            <span className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6 inline-block">Everstone Technologies</span>
             <p className="text-gray-300 mb-6">
-              Vertex Digital transforms your ideas into powerful web and mobile applications. We combine modern development practices, cutting-edge technology, and user-centric design to create digital solutions that drive growth.
+              Everstone Technologies transforms your ideas into powerful web and mobile applications. We combine modern development practices, cutting-edge technology, and user-centric design to create digital solutions that drive growth.
             </p>
             <p className="text-gray-300 mb-6">
-              Hornsgatan 110<br />
-              117 26, Stockholm Sweden
+               info@everstonetech.com<br />
+              Arada, Addis Ababa, 1620
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a 
-                href="https://www.linkedin.com/company/wrldstechnologies/" 
+                href="https://www.linkedin.com/company/Everstone Technologiestechnologies/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-gray-700 hover:text-white"
               >
                 <Linkedin size={20} />
               </a>
-            </div>
+            </div> */}
           </div>
           
           <div>
@@ -130,7 +130,7 @@ const Footer = () => {
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Vertex Digital. All rights reserved.
+            © {new Date().getFullYear()} Everstone Technologies. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link to="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>

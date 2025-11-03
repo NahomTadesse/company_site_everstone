@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Vertex</span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Everstone Technologies</span>
             </Link>
           </div>
           
@@ -80,32 +80,39 @@ const Navbar = () => {
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
                         <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">E-commerce Platform</div>
-                          <p className="text-sm text-gray-500">Full-stack retail solution with payment integration</p>
+                          <div className="font-medium">Addis Book Delivery</div>
+                          <p className="text-sm text-gray-500">An online bookstore with personalized recommendations and reading tracking</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/projects/sport-retail" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Mobile Fitness App</div>
-                          <p className="text-sm text-gray-500">Cross-platform health and wellness application</p>
+                          <div className="font-medium">Mayet Art</div>
+                          <p className="text-sm text-gray-500">Virtual gallery showcasing contemporary artists with immersive 3D viewing</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/projects/workwear" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">SaaS Dashboard</div>
-                          <p className="text-sm text-gray-500">Enterprise analytics and reporting platform</p>
+                          <div className="font-medium">N8stalgia</div>
+                          <p className="text-sm text-gray-500">Marketplace for vintage and retro collectibles with authentication services</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/projects/hockey" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Real-time Chat App</div>
-                          <p className="text-sm text-gray-500">Messaging platform with WebSocket technology</p>
+                          <div className="font-medium">Pizza Dashboard</div>
+                          <p className="text-sm text-gray-500">Business intelligence dashboard for pizza chain operations and sales analytics</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/projects/pet-tracker" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">AI-Powered CRM</div>
-                          <p className="text-sm text-gray-500">Smart customer relationship management system</p>
+                          <div className="font-medium">ATM Dashboard</div>
+                          <p className="text-sm text-gray-500">Financial dashboard monitoring ATM network performance and cash management</p>
+                        </Link>
+                      </li>
+
+                         <li>
+                        <Link to="/projects/insuranceProj" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Insurance Analytics</div>
+                          <p className="text-sm text-gray-500">Comprehensive analytics platform for insurance risk assessment and claims</p>
                         </Link>
                       </li>
                     </ul>
@@ -134,13 +141,13 @@ const Navbar = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                   <Link to="/blog">
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900")}>
                       News
                     </NavigationMenuLink>
                   </Link>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
                 
                 <NavigationMenuItem>
                   <Link to="/careers">
