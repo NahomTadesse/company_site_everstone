@@ -83,7 +83,7 @@ const Careers = () => {
                     <div className="bg-white rounded-xl p-6 border border-gray-200">
                       <div className="flex flex-col items-center text-center">
                         <img 
-                          src="/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
+                          src="https://wallpapers.com/images/high/default-profile-picture-placeholder-kal8zbcust2luxh3.png"
                           alt="Evestone"
                           className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
                         />

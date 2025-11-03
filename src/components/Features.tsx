@@ -19,28 +19,28 @@ const Features = () => {
       icon: <Code className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Custom Software Development",
       description: "Tailored software solutions designed to address your unique business needs, enhancing efficiency and productivity.",
-      image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png",
+      image: "https://blog.planview.com/wp-content/uploads/2020/01/Top-6-Software-Development-Methodologies.jpg",
       category: "Custom Software"
     },
     {
       icon: <Globe className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Web Applications",
       description: "Progressive web apps, enterprise SaaS platforms, e-commerce solutions, and custom web applications built with React, Next.js, Vue, and cutting-edge frameworks for optimal performance and user experience.",
-      image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png",
+      image: "https://www.milesweb.com/blog/wp-content/uploads/2024/04/types-of-web-application.png",
       category: "Web"
     },
     {
       icon: <Smartphone className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Mobile Development",
       description: "Native iOS and Android applications, or cross-platform solutions with React Native and Flutter. Full-featured mobile apps with offline capabilities, push notifications, and seamless device integration.",
-      image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png",
+      image: "https://aaaeeetv.com/wp-content/uploads/2024/06/unnamed-1.jpg",
       category: "Mobile"
     },
     {
       icon: <Cloud className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Cloud & Backend",
       description: "Scalable RESTful APIs, GraphQL endpoints, microservices architecture, serverless functions, comprehensive database design, and robust cloud infrastructure on AWS, Azure, or Google Cloud Platform.",
-      image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png",
+      image: "https://www.kvadrat.az/uploads/articles/66aa075661080.jpg",
       category: "Cloud"
     },
     // {
@@ -54,14 +54,14 @@ const Features = () => {
       icon: <Database className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Data Analytics & BI",
       description: "Interactive business intelligence dashboards, real-time data visualization, advanced predictive analytics, KPI tracking systems, automated reporting, and data warehouse solutions for data-driven decision making.",
-      image: "/lovable-uploads/cbd073dd-ecad-4643-bf2b-efc3d5846994.png",
+      image: "https://gdcitsolutions.com/wp-content/uploads/What-Is-Business-Intelligence.jpg",
       category: "Analytics"
     },
     {
       icon: <Cpu className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Digital Consulting",
       description: "Strategic technology consulting, comprehensive digital transformation roadmaps, enterprise architecture design, cloud migration strategies, and expert guidance to accelerate your organization's digital evolution.",
-      image: "/lovable-uploads/6fdd3d0d-5dca-470a-a845-bd7b07bff599.png",
+      image: "https://blog.outvise.com/wp-content/uploads/2021/12/Digital-strategy-consulting-skills-1024x576.png",
       category: "Consulting"
     }
   ];
