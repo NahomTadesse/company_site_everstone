@@ -20,6 +20,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
 import InsuranceProj from "./pages/insuranceProj"
+import ProjectsPage from "./pages/ProjectPage";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -33,6 +34,10 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/projects/firecat" element={<FireCatProject />} />
+
+            <Route path="/projects/project" element={<ProjectsPage />} />
+
+            {/* ProjectPage */}
             <Route path="/projects/sport-retail" element={<SportRetailProject />} />
             <Route path="/projects/workwear" element={<WorkwearProject />} />
             <Route path="/projects/hockey" element={<HockeyProject />} />

@@ -43,11 +43,11 @@ const Hero = () => {
       <div className="banner-container bg-black relative overflow-hidden h-screen w-full">
         <div className="absolute inset-0 bg-black w-full">
            <img 
-             src="https://t3.ftcdn.net/jpg/05/04/70/88/360_F_504708859_U9PtI4cCanponR5HrsI7Cna9841UTDFb.jpg" 
+             src="https://plus.unsplash.com/premium_photo-1683121716061-3faddf4dc504?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" 
              alt="Everstone Technologies Team Collaboration" 
              className={`w-full h-full object-cover  ${isMobile ? 'object-right' : 'object-center'}`} 
            />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-white"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-blue"></div>
         </div>
         
         <div className="banner-overlay bg-transparent absolute inset-0 flex items-end pb-16 md:pb-20">
